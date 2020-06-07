@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DLK</title>
   </head>
+
   <body>
     <header class="header">
       <a href="#">
@@ -80,30 +81,30 @@
           <span class="strip" onclick="slide(4)"></span>
         </div>
       </section>
-      <section class="Category">
-        <h1 class="Category-title">CATEGORY PRODUCTS</h1>
-        <ul class="Category-list">
-          <li class="Category-card">
+      <section class="category">
+        <h1 class="category-title">CATEGORY PRODUCTS</h1>
+        <ul class="category-list">
+          <li class="category-card">
             <img src="APPAREL_KIDS.png" alt="APPAREL KIDS" />
-            <h2 class="Category-card-title">APPAREL KIDS</h2>
+            <a class="category-card-product" href="#">APPAREL KIDS</a>
           </li>
-          <li class="Category-card">
+          <li class="category-card">
             <img src="HOLIDAY_SHOP.png" alt="HOLIDAY SHOP" />
-            <h2 class="Category-card-title">HOLIDAY SHOP</h2>
+            <a class="category-card-product" href="#">HOLIDAY SHOP</a>
           </li>
-          <li class="Category-card">
+          <li class="category-card">
             <img src="TOYS.png" alt="TOYS" />
-            <h2 class="Category-card-title">TOYS</h2>
+            <a class="category-card-product" href="#">TOYS</a>
           </li>
-          <li class="Category-card">
+          <li class="category-card">
             <img src="ACCESSORIES.png" alt="ACCESSORIES" />
-            <h2 class="Category-card-title">ACCESSORIES</h2>
+            <a class="category-card-product" href="#">ACCESSORIES</a>
           </li>
         </ul>
         <!--кнопки предыдущая, следующая-->
         <a href="#" class="previous">&#8249;</a>
         <a href="#" class="next">&#8250;</a>
-        <p class="Category-card-text">
+        <p class="category-card-text">
           Modern finds for the modern home. Curated goods by unique designers<br />
           around the world from fashion to furniture for kids and adults.
         </p>
@@ -126,7 +127,78 @@
           </li>
         </ul>
       </section>
+      <section class="design">
+        <h1 class="design-title">DESIGN LIFE KIDS</h1>
+        <h3 class="design-AboutUs">About Us</h3>
+        <p class="design-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years have
+          flown by. It's simply magical.
+        </p>
+        <button class="design-button">BUY NOW</button>
+      </section>
+      <section class="contacts">
+        <h1 class="contacts-tittle">CONTACTS</h1>
+        <p class="contacts-text">
+          Some days i feel like i've been working on dlk my entire life and
+          there are other days that i am completely shocked that four years have
+          flown by. It's simply magical.
+        </p>
+        <img class="contacts-map" src="map.png" alt="map" />
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <section class="footer-nav">
+        <h4 class="footer-nav-tittle">Navigation</h4>
+        <ul class="footer-nav-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Design Services</a></li>
+          <li><a href="#">Featured On</a></li>
+          <li><a href="#">2018 Holiday Catalog</a></li>
+          <li><a href="#">Shop By Designer</a></li>
+        </ul>
+      </section>
+      <section class="customer">
+        <h4 class="footer-customer-tittle">Customer Information</h4>
+        <ul class="footer-customer-list">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Sale Exclusions</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Search</a></li>
+        </ul>
+      </section>
+      <section class="connect">
+        <h4 class="footer-connect-tittle">Connect</h4>
+        <div class="submit_group">
+          <input type="text" placeholder="e-mail" value="" name="asd_email" />
+          <input
+            type="submit"
+            value="JOIN"
+            id="asd_subscribe_submit"
+            name="asd_submit"
+          />
+        </div>
+        <ul class="connect-networks">
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">twitter</a></li>
+          <li><a href="#">pinterest</a></li>
+          <li><a href="#">instagram</a></li>
+        </ul>
+      </section>
+      <div class="info">
+        <ul class="info-list">
+          <li class="info-list-CompanyRating">Company Rating</li>
+          <li class="info-list-Copyright">
+            Copyright © 2018 Dlk • Design Life Kids
+          </li>
+          <li class="info-list-WebDesign">
+            Web Design — Direct Line Development
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
