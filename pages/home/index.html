@@ -9,13 +9,13 @@
 
 <body>
   <header class="header">
-    <a href="#">
+    <a href="/pages/home/index.html">
       <img class="header-logo" src="/images/logo.svg" alt="logo">
     </a>
     <nav class="header-nav">
       <ul class="header-list">
-        <li><a class="header-list-item" href="#">blog</a></li>
-        <li><a class="header-list-item" href="#">catalog</a></li>
+        <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
+        <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
         <li><a class="header-list-item" href="#">about us</a></li>
       </ul>
     </nav>
@@ -28,7 +28,7 @@
           </form>
         </div>
       </li>
-      <li><a class="contact" href="#">contact us</a></li>
+      <li><a class="contact" href="/pages/contact-us/index.html">contact us</a></li>
     </ul>
   </header>
   <main>
@@ -87,19 +87,19 @@
       <ul class="category-list">
         <li class="category-list-card">
           <a class="category-card-product" href="#">
-            <img src="/images/apparel_kids.png" alt="apparel_kids.png">apparel kids</a>
+            <img class="category-image" src="/images/apparel_kids.png" alt="apparel_kids.png">apparel kids</a>
         </li>
         <li class="category-list-card">
           <a class="category-card-product" href="#">
-            <img src="/images/holiday_shop.png" alt="holiday_shop.png">holiday shop</a>
+            <img class="category-image" src="/images/holiday_shop.png" alt="holiday_shop.png">holiday shop</a>
+        </li>
+        <li class="category-list-card">
+          <a class="category-card-product" href="/pages/toys/index.html">
+            <img class="category-image" src="/images/toys.png" alt="toys.png">toys</a>
         </li>
         <li class="category-list-card">
           <a class="category-card-product" href="#">
-            <img src="/images/toys.png" alt="toys.png">toys</a>
-        </li>
-        <li class="category-list-card">
-          <a class="category-card-product" href="#">
-            <img src="/images/accessories.png" alt="accessories.png">accessories</a>
+            <img class="category-image" src="/images/accessories.png" alt="accessories.png">accessories</a>
         </li>
       </ul>
       <!--кнопки предыдущая, следующая-->
@@ -115,7 +115,7 @@
       <!--не понял что тут нужно прописать-->
       <ul class="service-menu">
         <li class="service-list-delivery">
-          <a href="#">Delivery</a>
+          <a href="#">delivery</a>
           <img src="/images/service_delivery.png" alt="delivery.png">
           <div class="service-text-delivery">
             <p>
@@ -206,6 +206,34 @@
       </p>
       <img class="contacts-map" src="/images/map.jpg" alt="map">
     </section>
+    <section class="contakt-us">
+      <h1 class="contakt-us-tittle">contakt-us</h1>
+      <form class="contakt-us-form" action="/pages/home/index.html">
+        <label class="form-label">
+          name
+          <input class="input-text" type="text" name="name">
+        </label>
+        <label class="form-label">
+          phone
+          <input class="input-text" type="tel" name="phone">
+        </label>
+        <label class="form-label">
+          email
+          <input class="input-text" type="email" name="email">
+        </label>
+        <label class="form-label">
+          message
+          <textarea name="message" cols="30" rows="10"></textarea>
+        </label>
+        <div class="subscribe">
+          <input type="checkbox" name="subscribe" value="personal data">
+          <label class="form-label">by clicking on the button, you consent to the processing of your personal data
+          </label>
+        </div>
+        <button class="form-button" type="submit">submit</button>
+        <button class="form-button-exit" type="button">exit</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <section class="footer-nav">
@@ -232,9 +260,11 @@
     </section>
     <section class="connect">
       <h4 class="footer-connect-tittle">connect</h4>
-      <div class="submit_group">
-        <input type="text" placeholder="e-mail" value="" name="asd_email">
-        <input type="submit" value="join" id="asd_subscribe_submit" name="asd_submit">
+      <div class="footer-connect-email">
+        <form action="/pages/home/index.html" class="footer-connect-form">
+          <input class="connect-email" placeholder="e-mail" type="email" name="email">
+          <button class="connect-button">join</button>
+        </form>
       </div>
       <ul class="connect-networks">
         <li>
@@ -253,7 +283,9 @@
     </section>
     <div class="info">
       <ul class="info-list">
-        <li class="info-list-companyRating">company rating</li>
+        <li class="info-list-companyRating">company rating
+          <div class="stars"></div>
+        </li>
         <li class="info-list-copyright">
           copyright © 2018 dlk • design life kids
         </li>
