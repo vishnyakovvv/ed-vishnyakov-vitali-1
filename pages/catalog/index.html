@@ -4,17 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DLK</title>
+  <title>DLK-Catalog</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="#"><img class="header-logo" src="logo.png" alt="logo"></a>
+    <a href="/pages/home/index.html">
+      <img class="header-logo" src="/images/logo.svg" alt="logo">
+    </a>
     <nav class="header-nav">
       <ul class="header-list">
-        <li><a class="header-nav-list" href="#">blog</a></li>
-        <li><a class="header-nav-list" href="#">catalog</a></li>
-        <li><a class="header-nav-list" href="#">about us</a></li>
+        <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
+        <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
+        <li><a class="header-list-item" href="#">about us</a></li>
       </ul>
     </nav>
     <ul class="header-list">
@@ -26,14 +28,14 @@
           </form>
         </div>
       </li>
-      <li><a class="contact" href="#">contact us</a></li>
+      <li><a class="contact" href="/pages/contact-us/index.html">contact us</a></li>
     </ul>
   </header>
   <main>
-    <h1 class="tittle">Category Products</h1>
+    <h1 class="tittle">category Products</h1>
     <ul class="breadcrumbs">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Catalog</a></li>
+      <li><a href="/pages/home/index.html">home</a></li>
+      <li><a href="/pages/catalog/index.html">catalog</a></li>
     </ul>
     <section class="catalog">
       <h2 class="catalog-title">catalog</h2>
@@ -47,7 +49,8 @@
             shop</a>
         </li>
         <li class="catalog-item-list">
-          <a class="category-item-product" href="#"><img src="/images/toys.png" alt="toys.png">toys</a>
+          <a class="category-item-product" href="/pages/toys/index.html"><img src="/images/toys.png"
+              alt="toys.png">toys</a>
         </li>
         <li class="catalog-item-list">
           <a class="category-item-product" href="#"><img src="/images/accessories.png"
@@ -84,48 +87,60 @@
   </main>
   <footer class="footer">
     <section class="footer-nav">
-      <h4 class="footer-nav-tittle">Navigation</h4>
+      <h4 class="footer-nav-tittle">navigation</h4>
       <ul class="footer-nav-list">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Design Services</a></li>
-        <li><a href="#">Featured On</a></li>
-        <li><a href="#">2018 Holiday Catalog</a></li>
-        <li><a href="#">Shop By Designer</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">design services</a></li>
+        <li><a href="#">featured on</a></li>
+        <li><a href="#">2018 holiday catalog</a></li>
+        <li><a href="#">shop by designer</a></li>
       </ul>
     </section>
     <section class="customer">
-      <h4 class="footer-customer-tittle">Customer Information</h4>
+      <h4 class="footer-customer-tittle">customer information</h4>
       <ul class="footer-customer-list">
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Sale Exclusions</a></li>
-        <li><a href="#">Shipping & Returns</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Search</a></li>
+        <li><a href="#">contact us</a></li>
+        <li><a href="#">sale exclusions</a></li>
+        <li><a href="#">shipping & returns</a></li>
+        <li><a href="#">terms & conditions</a></li>
+        <li><a href="#">privacy policy</a></li>
+        <li><a href="#">search</a></li>
       </ul>
     </section>
     <section class="connect">
-      <h4 class="footer-connect-tittle">Connect</h4>
-      <div class="submit_group">
-        <input type="text" placeholder="e-mail" value="" name="asd_email">
-        <input type="submit" value="JOIN" id="asd_subscribe_submit" name="asd_submit">
+      <h4 class="footer-connect-tittle">connect</h4>
+      <div class="footer-connect-email">
+        <form action="/pages/home/index.html" class="footer-connect-form">
+          <input class="connect-email" placeholder="e-mail" type="email" name="email">
+          <button class="connect-button">join</button>
+        </form>
       </div>
       <ul class="connect-networks">
-        <li><a href="#">facebook</a></li>
-        <li><a href="#">twitter</a></li>
-        <li><a href="#">pinterest</a></li>
-        <li><a href="#">instagram</a></li>
+        <li>
+          <a href="#"><img src="/images/soc_facebook.svg" alt="facebook"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/soc_twitter.svg" alt="twitter"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/soc_pinterest.svg" alt="pinterest"></a>
+        </li>
+        <li>
+          <a href="#"><img src="/images/soc_instagram.svg" alt="instagram"></a>
+        </li>
       </ul>
     </section>
     <div class="info">
       <ul class="info-list">
-        <li class="info-list-CompanyRating">Company Rating</li>
-        <li class="info-list-Copyright">
-          Copyright © 2018 Dlk • Design Life Kids
+        <li class="info-list-companyRating">company rating
+          <div class="stars"></div>
         </li>
-        <li class="info-list-WebDesign">
-          Web Design — Direct Line Development
+        <li class="info-list-copyright">
+          copyright © 2018 dlk • design life kids
+        </li>
+        <li class="info-list-webdesign">
+          web design — direct line development
         </li>
       </ul>
     </div>
