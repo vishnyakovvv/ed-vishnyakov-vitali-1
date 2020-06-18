@@ -9,7 +9,7 @@
 
 <body>
   <header class="header">
-    <a href="/pages/home/index.html">
+    <a href="/index.html">
       <img class="header-logo" src="/images/logo.svg" alt="logo">
     </a>
     <nav class="header-nav">
@@ -32,7 +32,43 @@
     </ul>
   </header>
   <main>
-
+    <h1 class="tittle">contact us</h1>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">home</a></li>
+      <li class="breadcrumbs-current"><span>contact us</span></li>
+    </ul>
+    <section class="conactUs-form">
+      <form class="contakt-us-form" action="/index.html">
+        <label class="form-label">
+          name
+          <input class="input-text" type="text" name="name">
+        </label>
+        <label class="form-label">
+          phone
+          <input class="input-text" type="tel" name="phone">
+        </label>
+        <label class="form-label">
+          email
+          <input class="input-text" type="email" name="email">
+        </label>
+        <label class="form-label">
+          message
+          <textarea name="message" cols="30" rows="10"></textarea>
+        </label>
+        <div class="subscribe">
+          <input type="checkbox" name="subscribe" value="personal data">
+          <label class="form-label">by clicking on the button, you consent to the processing of your personal data
+          </label>
+        </div>
+        <button class="form-button-black" type="submit">submit</button>
+      </form>
+    </section>
+    <section class="contactUs-text">
+      <p class="contactUs-text-par">Our support team are on-hand to assist with any issues you are experiencing.</p>
+      <p class="contactUs-text-par">Please use the form to contact us with your needs. Send us a message and we'll
+        respond as soon as possible.</p>
+      <p class="contactUs-text-help">An expert is waiting to help you!</p>
+    </section>
   </main>
   <footer class="footer">
     <section class="footer-nav">
@@ -60,7 +96,7 @@
     <section class="connect">
       <h4 class="footer-connect-tittle">connect</h4>
       <div class="footer-connect-email">
-        <form action="/pages/home/index.html" class="footer-connect-form">
+        <form action="/index.html" class="footer-connect-form">
           <input class="connect-email" placeholder="e-mail" type="email" name="email">
           <button class="connect-button">join</button>
         </form>
