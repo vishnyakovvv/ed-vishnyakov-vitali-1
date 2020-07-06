@@ -4,6 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/pages/catalog/style.css">
+  <link rel="stylesheet" href="/commone.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
+    rel="stylesheet">
   <title>DLK-Catalog</title>
 </head>
 
@@ -13,28 +18,24 @@
       <img class="header-logo" src="/images/logo.svg" alt="logo">
     </a>
     <nav class="header-nav">
-      <ul class="header-list">
+      <ul class="header-list header-list-left">
         <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
         <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
         <li><a class="header-list-item" href="#">about us</a></li>
       </ul>
+      <ul class="header-list header-list-right">
+        <li><img class="header-list-item header-search" src="/images/search.png" alt="search">
+        </li>
+        <li><a class="header-list-item header-contactus" href="/pages/contact-us/index.html">contact us</a>
+        </li>
+      </ul>
     </nav>
-    <ul class="header-list">
-      <li>
-        <div class="search">
-          <form>
-            <input type="text" placeholder="search">
-            <button type="submit"></button>
-          </form>
-        </div>
-      </li>
-      <li><a class="contact" href="/pages/contact-us/index.html">contact us</a></li>
-    </ul>
   </header>
+
   <main>
     <h1 class="tittle">category Products</h1>
     <ul class="breadcrumbs">
-      <li><a href="index.html">home</a></li>
+      <li><a href="/index.html">home</a></li>
       <li class="breadcrumbs-current"><span>catalog</span></li>
     </ul>
     <section class="catalog">
@@ -86,64 +87,78 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="footer-nav">
-      <h4 class="footer-nav-tittle">navigation</h4>
-      <ul class="footer-nav-list">
-        <li><a href="#">about us</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">design services</a></li>
-        <li><a href="#">featured on</a></li>
-        <li><a href="#">2018 holiday catalog</a></li>
-        <li><a href="#">shop by designer</a></li>
-      </ul>
-    </section>
-    <section class="customer">
-      <h4 class="footer-customer-tittle">customer information</h4>
-      <ul class="footer-customer-list">
-        <li><a href="#">contact us</a></li>
-        <li><a href="#">sale exclusions</a></li>
-        <li><a href="#">shipping & returns</a></li>
-        <li><a href="#">terms & conditions</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">search</a></li>
-      </ul>
-    </section>
-    <section class="connect">
-      <h4 class="footer-connect-tittle">connect</h4>
-      <div class="footer-connect-email">
-        <form action="/index.html" class="footer-connect-form">
-          <input class="connect-email" placeholder="e-mail" type="email" name="email">
-          <button class="connect-button">join</button>
-        </form>
-      </div>
-      <ul class="connect-networks">
-        <li>
-          <a href="#"><img src="/images/soc_facebook.svg" alt="facebook"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_twitter.svg" alt="twitter"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_pinterest.svg" alt="pinterest"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_instagram.svg" alt="instagram"></a>
-        </li>
-      </ul>
-    </section>
-    <div class="info">
-      <ul class="info-list">
-        <li class="info-list-companyRating">company rating
-          <div class="stars"></div>
-        </li>
-        <li class="info-list-copyright">
+    <section class="footer-contanier">
+      <section class="footer-nav">
+        <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
+        <hr class="nav-line-short">
+        <ul class="footer-nav-list">
+          <li class="nav-list-item"><a class="nav-link" href=#>about us</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>blog</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>design services</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>featured on</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
+        </ul>
+      </section>
+      <section class="footer-customer">
+        <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
+        <hr class="nav-line-short">
+        <ul class="footer-customer-list">
+          <li class="nav-list-item"><a class="nav-link" href=#>contact us</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>sale exclusions</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>shipping & returns</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>terms & conditions</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
+          <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
+        </ul>
+      </section>
+      <section class="footer-connect">
+        <h4 class="footer-connect-tittle footer-tittle">connect</h4>
+        <!-- <li class="nav-line"> -->
+        <hr class="nav-line-short">
+        <!-- </li> -->
+        <div class="footer-connect-email">
+          <form action="/index.html" class="footer-connect-form">
+            <input class="connect-email" placeholder="Email" type="email" name="email">
+            <button class="connect-button">join</button>
+          </form>
+        </div>
+        <ul class="connect-networks">
+          <li class="networks-circle">
+            <a class="social-link social-facebook" href="#"></a>
+          </li>
+          <li class="networks-circle">
+            <a class="social-link social-twitter" href="#"></a>
+          </li>
+          <li class="networks-circle">
+            <a class="social-link social-pinterest" href="#"></a>
+          </li>
+          <li class="networks-circle">
+            <a class="social-link social-instagram" href="#"></a>
+          </li>
+        </ul>
+      </section>
+      <hr class="nav-line-long">
+      <section class="footer-info">
+        <section class="info-list">
+          <div class="info-list-company">company rating
+            <ul class="stars">
+              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+            </ul>
+          </div>
+        </section>
+        <section class="info-list-copyright">
           copyright © 2018 dlk • design life kids
-        </li>
-        <li class="info-list-webdesign">
+        </section>
+        <section class="info-list-webdesign">
           web design — direct line development
-        </li>
-      </ul>
-    </div>
+        </section>
+      </section>
+    </section>
   </footer>
 </body>
 
