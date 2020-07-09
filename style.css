@@ -1,120 +1,56 @@
 /* slideshow-container */
 
 .slideshow-container {
+  min-height: 500px;
+
   margin-bottom: 90px;
-  margin-left: 110px;
-  margin-right: 110px;
 }
 
-.myslide1 {
+.slideshow-list {
+  list-style: none;
+
+  padding: 0;
+}
+
+.slide1 {
   position: relative;
 
   width: 100%;
-  height: 500px;
-
-  padding-right: 110px;
 }
 
-.myslide1-visaria {
+.slide1-image {
+  position: absolute;
+  left: 445px;
+
+  z-index: 2;
+}
+
+.slide1-wrapper {
+  display: flex;
   position: relative;
   top: 89px;
 
-  width: 100%;
-  height: 411px;
+  max-width: 1180px;
+  min-height: 411px;
 
   background-color: #eee4db;
 }
 
-.myslide1-number {
+.slide1__number-strips {
+  position: absolute;
+  margin-left: 28px;
+  margin-top: 17px;
+}
+
+.slide1-number {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
   color: rgba(30, 6, 6, 0.05);
   font-weight: 400;
-
-  position: absolute;
-  top: 17px;
-  left: 28px;
-}
-
-.myslide1-title {
-  position: absolute;
-  top: 89px;
-  left: 133px;
-
-  text-transform: uppercase;
-
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  line-height: 44px;
-
-  margin: 0;
-}
-
-.myslide1-text {
-  position: absolute;
-  top: 197px;
-  left: 133px;
-
-  font-family: "Crimson Text", serif;
-  font-size: 20px;
-  line-height: 25px;
-
-  margin: 0;
-}
-
-.myslide1-button {
-  position: relative;
-  top: 243px;
-  left: 133px;
-  width: 161px;
-  height: 40px;
-
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  color: white;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-
-  background-color: black;
-
-  border: 0 none;
-
-  cursor: pointer;
-}
-
-.myslide1-text-bottom {
-  position: absolute;
-  bottom: 0;
-
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 600;
-
-  text-align: center;
-
-  background-color: #c29974;
-
-  width: 100%;
-  height: 39px;
-}
-
-.myslide1-image {
-  position: absolute;
-  left: 445px;
-
-  z-index: 1;
+  margin-bottom: 10px;
 }
 
 .strips {
-  position: absolute;
-
-  top: 101px;
-  left: 31px;
-
   cursor: pointer;
 }
 
@@ -131,11 +67,82 @@
   background-color: #d6cac2;
 }
 
+.strip-active {
+  background-color: rgba(30, 6, 6, 0.6);
+}
+
+.slider__tittle-text-link {
+  padding-left: 133px;
+  padding-top: 89px;
+}
+
+.slide1-title {
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  width: 400px;
+}
+
+.slide1-text {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  line-height: 25px;
+
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.slide1-link {
+  width: 161px;
+  height: 40px;
+
+  background-color: black;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 89px;
+}
+
+.slide1-link-text {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.slide1-text-bottom {
+  position: absolute;
+  bottom: 0;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+
+  text-align: center;
+
+  background-color: #c29974;
+
+  height: 39px;
+  width: 100%;
+}
+
 /* category */
 
 .category-container {
-  margin-left: 110px;
-  margin-right: 110px;
   margin-bottom: 90px;
 }
 
@@ -153,10 +160,10 @@
   text-transform: uppercase;
 
   padding-left: 0;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
 }
 
-.category-title {
+.category-tittle {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 38px;
@@ -233,9 +240,14 @@
 
   margin: 0;
 
-  text-align: center;
-
   color: #ffffff;
+
+  width: 200px;
+
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .category-button {
@@ -258,6 +270,8 @@
   border: none;
 
   cursor: pointer;
+
+  margin-right: 3px;
 }
 
 .next {
@@ -272,8 +286,6 @@
 }
 
 .image-previous {
-  object-position: center;
-
   margin-top: 3px;
 }
 
@@ -293,8 +305,21 @@
   flex-wrap: wrap;
 
   margin-bottom: 90px;
-  margin-left: 110px;
-  margin-right: 110px;
+}
+
+.service-list {
+  padding: 0;
+  margin: 0;
+}
+
+.service-container-delivery {
+  display: flex;
+}
+
+.contanier-delivery-image {
+}
+
+.contanier-delivery-description {
 }
 
 .service-tittle {
@@ -304,21 +329,15 @@
   font-size: 38px;
   line-height: 46px;
 
-  position: absolute;
-
-  margin-top: 30px;
-  margin-left: 601px;
+  margin-bottom: 6px;
+  margin-left: 60px;
 }
 
-.service-list {
-  list-style-type: none;
-
-  position: absolute;
-
-  margin-top: 83px;
-  margin-left: 540px;
-
+.service-list-delivery {
   padding: 0;
+
+  margin-top: 30px;
+  margin-left: 60px;
 }
 
 .service-item-delivery {
@@ -328,6 +347,8 @@
   background-color: rgba(112, 187, 220, 0.2);
 
   cursor: pointer;
+
+  list-style-type: none;
 }
 
 .item-delivery-tittle {
@@ -341,28 +362,20 @@
   margin: 0;
 }
 
-.delivery-paragraph_1 {
+.delivery-paragraph {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 
-  margin-top: 267px;
-  margin-left: 600px;
+  margin-left: 60px;
+  margin-bottom: 26px;
 
-  position: absolute;
+  width: 470px;
 }
 
-.delivery-paragraph_2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-
-  margin-top: 348px;
-  margin-left: 600px;
-
-  position: absolute;
+.paragraph2 {
+  margin-bottom: 0;
 }
 
 .service-item-guarantee {
@@ -372,6 +385,8 @@
   margin: 0;
 
   cursor: pointer;
+
+  list-style-type: none;
 }
 
 .item-guarantee-tittle {
@@ -388,6 +403,8 @@
 
 .service-item-credit {
   cursor: pointer;
+
+  list-style-type: none;
 }
 
 .item-credit-tittle {
@@ -402,11 +419,6 @@
 }
 
 .service-button {
-  position: absolute;
-
-  margin-top: 462px;
-  margin-left: 600px;
-
   width: 149px;
   height: 40px;
 
@@ -422,14 +434,14 @@
   border: 0 none;
 
   cursor: pointer;
+
+  margin-left: 60px;
 }
 
 /* partners */
 
 .partners-container {
   margin-bottom: 90px;
-  margin-left: 110px;
-  margin-right: 110px;
 }
 
 .partners-list {
@@ -454,8 +466,6 @@
 .design-contacts {
   display: flex;
 
-  margin-right: 110px;
-  margin-left: 110px;
   margin-bottom: 60px;
 
   height: 349px;

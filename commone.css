@@ -1,3 +1,9 @@
+.container {
+  min-height: 100%;
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
 a {
   text-decoration: none;
 }
@@ -17,25 +23,28 @@ body {
 /* Header */
 
 .header {
-  display: flex;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
 
-  margin: 50px 110px 40px 110px;
+.header-wrapper {
+  display: flex;
 }
 
 .header-logo {
   display: block;
 
-  padding-right: 60px;
+  margin-right: 60px;
 }
 
 .header-nav {
   font-family: "Open Sans", sans-serif;
 
-  width: 100%;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  width: 100%;
 }
 
 .header-list {
@@ -43,12 +52,10 @@ body {
   text-transform: uppercase;
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  padding-left: 0;
-}
-
-.header-list-right {
-  text-align: center;
+  padding: 0;
 }
 
 .header-list-item {
@@ -56,20 +63,21 @@ body {
   font-size: 14px;
   line-height: 19px;
 
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.header-list-item-link {
   color: #000000;
-  text-align: center;
 }
 
 .header-search {
-  display: block;
-  padding-right: 23.45px;
-  margin-top: 4px;
+  margin: 0;
 }
 
 .header-contactus {
-  font-weight: bold;
-  padding-right: 0;
+  font-weight: 600;
+  margin-right: 0;
+  margin-left: 23.45px;
 }
 
 /* footer */
