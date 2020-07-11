@@ -84,6 +84,8 @@ body {
 
 .footer {
   background-color: #434343;
+
+  display: flex;
 }
 
 .footer-tittle {

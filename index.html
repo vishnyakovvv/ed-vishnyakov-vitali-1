@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <section class="header-wrapper">
+      <div class="header-wrapper">
         <a href="index.html"><img class="header-logo" src="images/logo.svg" alt="logo"></a>
         <nav class="header-nav">
           <ul class="header-list header-list-left">
@@ -31,7 +31,7 @@
                 href="pages/contact-us/index.html">contact us</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
 
     </div>
 
@@ -40,28 +40,26 @@
   <main>
     <section class="slideshow-container">
       <div class="container">
-        <ul class="slide1 slideshow-list">
+        <ul class="slide-list">
           <li class="slideshow-item">
-            <img class="slide1-image" src="images/myslides-01.png" alt="the ooh noo collectiom">
-            <div class="slide1-wrapper">
-              <div class="slide1__number-strips">
-                <div class="slide1-number">01</div>
-                <div class="strips">
-                  <button class="strip button strip-active"></button>
-                  <button class="strip button"></button>
-                  <button class="strip button"></button>
-                  <button class="strip button"></button>
+            <img class="slide-image" src="images/myslides-01.png" alt="the ooh noo collectiom">
+            <div class="slide-wrapper">
+              <div class="slide__number-strips">
+                <div class="slide-number">01</div>
+                <div class="slide-strips">
+                  <button class="strip strip-active"></button>
+                  <button class="strip"></button>
+                  <button class="strip"></button>
+                  <button class="strip"></button>
                 </div>
               </div>
               <div class="slider__tittle-text-link">
-                <h2 class="slide1-title">the ooh noo collection</h2>
-                <p class="slide1-text">Designed in Slovenia</p>
-                <div class="slide1-link">
-                  <a class="slide1-link-text" href="#">explore now</a>
-                </div>
+                <h2 class="slide-title">the ooh noo collection</h2>
+                <p class="slide-text">Designed in Slovenia</p>
+                <div class="slide-link"><a class="slide-link-text" href="#">explore now</a></div>
               </div>
-              <div class="slide1-text-bottom">
-                <p> free (continental) USA shipping on all orders of $100 USD or more!</p>
+              <div class="slide-bottom-info">
+                <p class="slide-bottom-text"> free (continental) USA shipping on all orders of $100 USD or more!</p>
               </div>
             </div>
           </li>
@@ -106,14 +104,14 @@
 
     <section class="service-container">
       <div class="container">
-        <ul class="service-list">
-          <li class="service-container-delivery">
+        <div class="service-list">
+          <div class="service-container-block">
             <div class="contanier-delivery-image">
               <img class="service-image" src="images/service_delivery.png" alt="delivery.png">
             </div>
             <div class="contanier-delivery-description">
+              <h2 class="service-tittle">delivery</h2>
               <ul class="service-list-delivery">
-                <h2 class="service-tittle">delivery</h2>
                 <li class="service-item-delivery">
                   <h3 class="item-delivery-tittle">Delivery</h3>
                   <a class="delivery-link" href="#"></a>
@@ -126,25 +124,24 @@
                   <h3 class="item-credit-tittle">Credit</h3>
                   <a class="credit-link" href="#"></a>
                 </li>
-                <div class="delivery-paragraph">
-                  <p class="paragraph1">
-                    Some days i feel like i've been working on dlk my entire life
-                    and there are other days that i am completely shocked that four
-                    years have flown by. It's simply magical.
-                  </p>
-                  <p class="paragraph2">
-                    What started as an outlet to deal with the traumatic loss of my
-                    husband, dlk has now become a truly happy place for me and i
-                    have you and all of the beautiful designers that we work with
-                    to thank!
-                  </p>
-                </div>
-
-                <button class="service-button">lean more</button>
               </ul>
+              <div class="delivery-paragraph">
+                <p class="paragraph1">
+                  Some days i feel like i've been working on dlk my entire life
+                  and there are other days that i am completely shocked that four
+                  years have flown by. It's simply magical.
+                </p>
+                <p class="paragraph2">
+                  What started as an outlet to deal with the traumatic loss of my
+                  husband, dlk has now become a truly happy place for me and i
+                  have you and all of the beautiful designers that we work with
+                  to thank!
+                </p>
+              </div>
+              <button class="service-button">learn more</button>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -170,29 +167,32 @@
 
     <section class="design-contacts">
       <div class="container">
-        <section class="design-container">
-          <h2 class="design-title">design life kids</h2>
-          <div class="design-blue-area">
-            <h3 class="design-aboutus-tittle">About Us</h3>
-            <p class="design-text">
-              Some days i feel like i've been working on dlk my entire life and<br>
-              there are other days that i am completely shocked that four<br> years have
-              flown by. It's simply magical.
-            </p>
-            <button class="design-button">buy now</button>
-          </div>
-        </section>
-        <section class="contacts-container">
-          <h2 class="contacts-tittle">contacts</h2>
-          <div class="contacts-blue-area">
-            <p class="contacts-text">
-              Some days i feel like i've been working on dlk my entire life and<br>
-              there are other days that i am completely shocked that four<br> years have
-              flown by. It's simply magical.
-            </p>
-          </div>
-          <img class="contacts-map" src="images/map.jpg" alt="map">
-        </section>
+        <div class="design-contacts-wrapper">
+          <section class="design-container">
+            <h2 class="design-title">design life kids</h2>
+            <div class="design-blue-area">
+              <h3 class="design-aboutus-tittle">About Us</h3>
+              <p class="design-text">
+                Some days i feel like i've been working on dlk my entire life and<br>
+                there are other days that i am completely shocked that four<br> years have
+                flown by. It's simply magical.
+              </p>
+              <button class="design-button">buy now</button>
+            </div>
+          </section>
+          <section class="contacts-container">
+            <h2 class="contacts-tittle">contacts</h2>
+            <div class="contacts-blue-area">
+              <p class="contacts-text">
+                Some days i feel like i've been working on dlk my entire life and<br>
+                there are other days that i am completely shocked that four<br> years have
+                flown by. It's simply magical.
+              </p>
+            </div>
+            <img class="contacts-map" src="images/map.jpg" alt="map">
+          </section>
+        </div>
+
       </div>
     </section>
   </main>
