@@ -1,0 +1,8 @@
+.blocks-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.blocks-item {
+  display: flex;
+}
