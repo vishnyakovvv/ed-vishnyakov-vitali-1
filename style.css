@@ -100,10 +100,6 @@
 
   background-color: black;
 
-  /* margin-bottom: 89px; */
-
-  padding: 9px 0;
-
   text-align: center;
 }
 
@@ -114,6 +110,10 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+
+  display: block;
+
+  padding: 9px 0;
 }
 
 .slide-bottom-info {
@@ -267,9 +267,6 @@
 .service-wrapper {
   padding: 0;
   margin: 0;
-}
-
-.service-container-block {
   display: flex;
 }
 
@@ -287,6 +284,7 @@
   font-size: 38px;
   line-height: 46px;
 
+  margin-top: 30px;
   margin-bottom: 6px;
   margin-left: 61px;
 }
@@ -300,7 +298,6 @@
 
 .service-item {
   width: 326px;
-  height: 55px;
 
   list-style-type: none;
 }
@@ -311,19 +308,14 @@
   font-weight: 700;
 }
 
-.service-item-delivery {
-}
-
 .service-item-link {
   font-family: "Crimson Text", serif;
   font-size: 26px;
   line-height: 32px;
   color: #1e0606;
 
-  margin-left: 61px;
-
   display: block;
-  padding-top: 15px;
+  padding: 11px 180px 11px 60px;
 }
 
 .delivery-paragraph {
@@ -350,18 +342,12 @@
 }
 
 .service-item {
-  list-style-type: none;
-
-  width: 326px;
-  max-height: 55px;
 }
 
 .service-link {
   background-color: black;
 
   margin-left: 61px;
-
-  padding: 9px 0;
 
   text-align: center;
 
@@ -375,6 +361,10 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+
+  display: block;
+
+  padding: 9px 0;
 }
 
 /* partners */
@@ -391,8 +381,6 @@
   list-style-type: none;
 
   padding: 0;
-
-  margin: 0;
 }
 
 .partners-list-item {
