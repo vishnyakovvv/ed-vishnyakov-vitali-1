@@ -9,156 +9,190 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
     rel="stylesheet">
-  <title>DLK-Catalog</title>
+  <title>DLK</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="/index.html">
-      <img class="header-logo" src="/images/logo.svg" alt="logo">
-    </a>
-    <nav class="header-nav">
-      <ul class="header-list header-list-left">
-        <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
-        <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
-        <li><a class="header-list-item" href="#">about us</a></li>
-      </ul>
-      <ul class="header-list header-list-right">
-        <li><img class="header-list-item header-search" src="/images/search.png" alt="search">
-        </li>
-        <li><a class="header-list-item header-contactus" href="/pages/contact-us/index.html">contact us</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"></a>
+        <nav class="header-nav">
+          <ul class="header-list header-list-left">
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/blog/index.html">blog</a></li>
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/catalog/index.html">catalog</a>
+            </li>
+            <li class="header-list-item"><a class="header-list-item-link" href="#">about us</a></li>
+          </ul>
+          <ul class="header-list header-list-right">
+            <li class="header-list-item header-search header-list-item-link"><a href="#"></a>
+              <img src="/images/search.png" alt="search"></li>
+            <li class="header-list-item header-contactus"><a class="header-list-item-link"
+                href="/pages/contact-us/index.html">contact us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
-    <h1 class="tittle">category Products</h1>
-    <ul class="breadcrumbs">
-      <li><a href="/index.html">home</a></li>
-      <li class="breadcrumbs-current"><span>catalog</span></li>
-    </ul>
-    <section class="catalog">
-      <h2 class="catalog-title">catalog</h2>
-      <ul class="catalog-list">
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="#"><img src="/images/apparel_kids.png" alt="apparel_kids.png">apparel
-            kids</a>
+    <div class="container">
+      <h2 class="tittle">category products</h2>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/index.html">Home</a>
         </li>
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="#"><img src="/images/holiday_shop.png" alt="holiday_shop.png">holiday
-            shop</a>
-        </li>
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="/pages/toys/index.html"><img src="/images/toys.png"
-              alt="toys.png">toys</a>
-        </li>
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="#"><img src="/images/accessories.png"
-              alt="accessories.png">accessories</a>
-        </li>
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="#"><img src="/images/sale.png" alt="sale.png">sale</a>
-        </li>
-        <li class="catalog-list-item">
-          <a class="category-item-product" href="#"><img src="/images/apparel_adults.png"
-              alt="apparel_adults.png">apparel adults</a>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-link breadcrumbs-active">Catalog</span>
         </li>
       </ul>
-    </section>
-    <section class="description">
-      <h2 class="description-tittle">Product Description</h2>
-      <p class="description-text">
-        Interactive doll Zapf Creation Baby Born Sister can drink from a
-        bottle and almost really cry. You can even bathe her, just like a
-        little sister.
-      </p>
-      <p class="description-text">
-        A toy with a height of 43 cm bends its knees, the head rotates, it can
-        stand upright. Such a doll will be an excellent choice for a gift for
-        a girl from 4 years old.
-      </p>
-      <p class="description-text">
-        The set includes a miniature set of fashionable clothes, a hairbrush,
-        a bottle for water, a pair of hairpins and elastic bands for hair, as
-        well as two bracelets: one for the doll, the other for her young
-        mistress.
-      </p>
-    </section>
+      <section class="category-products">
+        <h2 class="visually-hidden">category Products</h2>
+        <ul class="catalog-list">
+          <li class="category-item">
+            <div>
+              <a class="category-link" href="#">
+                <img class="category-image" src="/images/apparel_kids.png" alt="apparel_kids.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">apparel kids</h3>
+          </li>
+          <li class="category-item">
+            <div>
+              <a class="category-link" href="#">
+                <img class="category-image" src="/images/holiday_shop.png" alt="holiday_shop.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">holiday shop</h3>
+          </li>
+          <li class="category-item">
+            <div>
+              <a class="category-link" href="/pages/toys/index.html">
+                <img class="category-image" src="/images/toys.png" alt="toys.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">toys</h3>
+          </li>
+          <li class="category-item category-item-bottom">
+            <div>
+              <a class="category-link" href="#">
+                <img class="category-image" src="/images/accessories.png" alt="accessories.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">accessories</h3>
+          </li>
+          <li class="category-item category-item-bottom">
+            <div>
+              <a class="category-link" href="#">
+                <img class="category-image" src="/images/sale.png" alt="accessories.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">sale</h3>
+          </li>
+          <li class="category-item category-item-bottom">
+            <div>
+              <a class="category-link" href="#">
+                <img class="category-image" src="/images/apparel_adults.png" alt="accessories.png">
+              </a>
+            </div>
+            <h3 class="card-tittle">apparel adults</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="description">
+        <h3 class="description-tittle">Product Description</h3>
+        <p class="description-text">
+          Interactive doll Zapf Creation Baby Born Sister can drink from a
+          bottle and almost really cry. You can even bathe her, just like a
+          little sister.
+        </p>
+        <p class="description-text">
+          A toy with a height of 43 cm bends its knees, the head rotates, it can
+          stand upright. Such a doll will be an excellent choice for a gift for
+          a girl from 4 years old.
+        </p>
+        <p class="description-text">
+          The set includes a miniature set of fashionable clothes, a hairbrush,
+          a bottle for water, a pair of hairpins and elastic bands for hair, as
+          well as two bracelets: one for the doll, the other for her young
+          mistress.
+        </p>
+      </section>
   </main>
+
   <footer class="footer">
-    <section class="footer-contanier">
-      <section class="footer-nav">
-        <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
-        <hr class="nav-line-short">
-        <ul class="footer-nav-list">
-          <li class="nav-list-item"><a class="nav-link" href=#>about us</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>blog</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>design services</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>featured on</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
-        </ul>
-      </section>
-      <section class="footer-customer">
-        <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
-        <hr class="nav-line-short">
-        <ul class="footer-customer-list">
-          <li class="nav-list-item"><a class="nav-link" href=#>contact us</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>sale exclusions</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>shipping & returns</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>terms & conditions</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
-          <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
-        </ul>
-      </section>
-      <section class="footer-connect">
-        <h4 class="footer-connect-tittle footer-tittle">connect</h4>
-        <!-- <li class="nav-line"> -->
-        <hr class="nav-line-short">
-        <!-- </li> -->
-        <div class="footer-connect-email">
-          <form action="/index.html" class="footer-connect-form">
-            <input class="connect-email" placeholder="Email" type="email" name="email">
-            <button class="connect-button">join</button>
-          </form>
+    <div class="container">
+      <section class="footer-contanier">
+        <div class="footer-nav">
+          <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-nav-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>about us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>blog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>design services</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>featured on</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
+          </ul>
         </div>
-        <ul class="connect-networks">
-          <li class="networks-circle">
-            <a class="social-link social-facebook" href="#"></a>
-          </li>
-          <li class="networks-circle">
-            <a class="social-link social-twitter" href="#"></a>
-          </li>
-          <li class="networks-circle">
-            <a class="social-link social-pinterest" href="#"></a>
-          </li>
-          <li class="networks-circle">
-            <a class="social-link social-instagram" href="#"></a>
-          </li>
-        </ul>
-      </section>
-      <hr class="nav-line-long">
-      <section class="footer-info">
-        <section class="info-list">
-          <div class="info-list-company">company rating
-            <ul class="stars">
-              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-            </ul>
+        <div class="footer-customer">
+          <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-customer-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>contact us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>sale exclusions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shipping & returns</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>terms & conditions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h4 class="footer-connect-tittle footer-tittle">connect</h4>
+          <hr class="nav-line-short">
+          <div class="footer-connect-email">
+            <form action="index.html" class="footer-connect-form">
+              <input class="connect-email" placeholder="Email" type="email" name="email">
+              <button class="connect-button">join</button>
+            </form>
           </div>
-        </section>
-        <section class="info-list-copyright">
-          copyright © 2018 dlk • design life kids
-        </section>
-        <section class="info-list-webdesign">
-          web design — direct line development
-        </section>
+          <ul class="connect-networks">
+            <li class="networks-circle">
+              <a class="social-link social-facebook" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-twitter" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-pinterest" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="nav-line-long">
+        <div class="footer-info">
+          <div class="info-list">
+            <div class="info-list-company">company rating
+              <ul class="stars">
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-list-copyright">
+            copyright © 2018 dlk • design life kids
+          </div>
+          <div class="info-list-webdesign">
+            web design — direct line development
+          </div>
+        </div>
       </section>
-    </section>
+    </div>
   </footer>
 </body>
 

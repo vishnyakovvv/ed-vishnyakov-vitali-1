@@ -1,0 +1,63 @@
+.tittle {
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+
+  margin-bottom: 50px;
+
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  line-height: 25px;
+
+  display: inline-block;
+
+  margin-right: 20px;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: ">";
+  margin-left: 20px;
+  font-style: normal;
+}
+
+.breadcrumbs-link {
+  color: #1e0606;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:not(span):hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs-active {
+  color: #1e0606;
+  opacity: 0.5;
+}
+
+/* parameters */
+
+.parameters {
+}
+
+.parameters-form {
+  background-color: rgba(125, 151, 218, 0.2);
+  display: flex;
+}
+
+.parameter-cost {
+}

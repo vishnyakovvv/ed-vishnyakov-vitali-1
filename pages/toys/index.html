@@ -4,169 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/pages/toys/style.css">
   <link rel="stylesheet" href="/commone.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
+    rel="stylesheet">
   <title>DLK-Toys</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="/index.html">
-      <img class="header-logo" src="/images/logo.svg" alt="logo">
-    </a>
-    <nav class="header-nav">
-      <ul class="header-list">
-        <li><a class="header-list-item" href="/pages/blog/index.html">blog</a></li>
-        <li><a class="header-list-item" href="/pages/catalog/index.html">catalog</a></li>
-        <li><a class="header-list-item" href="#">about us</a></li>
-      </ul>
-    </nav>
-    <ul class="header-list">
-      <li>
-        <div class="search">
-          <form>
-            <input type="text" placeholder="search">
-            <button type="submit"></button>
-          </form>
-        </div>
-      </li>
-      <li><a class="contact" href="/pages/contact-us/index.html">contact us</a></li>
-    </ul>
-  </header>
-  <main>
-    <h1 class="tittle">toy for kids</h1>
-    <ul class="breadcrumbs">
-      <li><a href="/index.html">home</a></li>
-      <li><a href="/pages/catalog/index.html">catalog</a></li>
-      <li class="breadcrumbs-current"><span>toys</span></li>
-    </ul>
-    <section class="parameters">
-      <h2>parameter toys</h2>
-      <form class="parameters-form" action="/pages/toys/index.html">
-        <label class="parameter-cost">
-          cost
-          <input class="range-input" type="range" name="cost" min="0" max="500" value="10">
-          <!--тут не понял как прописать от 0 до 500-->
-        </label>
-        <fieldset class="checkbox-color">
-          <legend class="color-name">color</legend>
-          <ul>
-            <li>
-              <label class="color-list">
-                <input class="input-checkbox-color" name="colors" type="checkbox" value="black">
-                black
-              </label>
+    <div class="container">
+      <div class="header-wrapper">
+        <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"></a>
+        <nav class="header-nav">
+          <ul class="header-list header-list-left">
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/blog/index.html">blog</a></li>
+            <li class="header-list-item"><a class="header-list-item-link" href="/pages/catalog/index.html">catalog</a>
             </li>
-            <li>
-              <label class="color-list">
-                <input class="input-checkbox-color" name="colors" type="checkbox" value="blue">
-                blue
-              </label>
-            </li>
-            <li>
-              <label class="color-list">
-                <input class="input-checkbox-color" name="colors" type="checkbox" value="green">
-                green
-              </label>
-            </li>
-            <li>
-              <label class="color-list">
-                <input class="input-checkbox-color" name="colors" type="checkbox" value="white">
-                white
-              </label>
-            </li>
+            <li class="header-list-item"><a class="header-list-item-link" href="#">about us</a></li>
           </ul>
-        </fieldset>
-        <fieldset class="radio-delivery">
-          <legend class="delivery-name">delivery</legend>
-          <ul>
-            <li>
-              <label class="delivery-list">
-                <input class="input-radio-delivery" name="delivery" type="radio" value="free_shipping">
-                free shipping
-              </label>
-            </li>
-            <li>
-              <label class="delivery-list">
-                <input class="input-radio-delivery" name="delivery" type="radio" value="fast_shipping">
-                fast shipping
-              </label>
-            </li>
+          <ul class="header-list header-list-right">
+            <li class="header-list-item header-search header-list-item-link"> <a href="#"></a><img
+                src="/images/search.png" alt="search"></li>
+            <li class="header-list-item header-contactus"><a class="header-list-item-link"
+                href="/pages/contact-us/index.html">contact us</a></li>
           </ul>
-        </fieldset>
-        <fieldset class="radio-amount">
-          <legend class="amount-name">amount</legend>
-          <ul>
-            <li>
-              <label class="amount-list">
-                <input class="input-radio-amount" name="amount" type="radio" value="0-5">
-                0-5
-              </label>
-            </li>
-            <li>
-              <label class="amount-list">
-                <input class="input-radio-amount" name="amount" type="radio" value="10-20">
-                10-20
-              </label>
-            </li>
-            <li>
-              <label class="amount-list">
-                <input class="input-radio-amount" name="amount" type="radio" value="20-50">
-                20-50
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">apply</button>
-      </form>
-    </section>
-    <section class="products">
-      <ul class="products-list">
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/sharky_bean.png" alt="sharky_bean.png"></a>
-          <h3 class="products-name">sharky bean bag chair cover</h3>
-          <span class="products-price">$60.00 USD</span>
-        </li>
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/brass_deco.png" alt="brass_deco.png"></a>
-          <h3 class="products-name">brass deco frames</h3>
-          <span class="products-price">$66.00 USD</span>
-        </li>
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/cibo_full.png" alt="cibo_full.png"></a>
-          <h3 class="products-name">cibo full apron</h3>
-          <span class="products-price">$60.00 USD</span>
-        </li>
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/gatcha_gatcha.png" alt="gatcha_gatcha.png"></a>
-          <h3 class="products-name">gatcha gatcha gumball machine</h3>
-          <span class="products-price">$56.00 USD</span>
-        </li>
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/christmas_advent.png" alt="christmas advent.png"></a>
-          <h3 class="products-name">christmas advent scented candle</h3>
-          <span class="products-price">$29.00 USD</span>
-        </li>
-        <li class="products-list-card">
-          <a class="products-card" href="#">
-            <img class="products-image" src="/images/tangle_spinning.png" alt="tangle_spinning.png"></a>
-          <h3 class="products-name">tangle spinning tea light</h3>
-          <span class="products-price">$56.00 USD</span>
-        </li>
-      </ul>
-      <div class="products-page">
-        <a href="#" class="previous">&#8249;</a>
-        <a href="#" class="page">1</a>
-        <a href="#" class="page">2</a>
-        <a href="#" class="page">3</a>
-        <a href="#" class="page">4</a>
-        <a href="#" class="next">&#8250;</a>
+        </nav>
       </div>
-    </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="tittle">toy for kids</h2>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/index.html">Home</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/pages/catalog/index.html">Catalog</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-link breadcrumbs-active">Toys</span>
+        </li>
+      </ul>
+      <section class="parameters">
+        <h2 class="visually-hidden">parameter toys</h2>
+        <form class="parameters-form" action="/pages/toys/index.html">
+          <div class="parameters-cost">
+            <h4 class="form-tittle">cost</h4>
+            <label class="parameter-cost">
+              <input class="range-input" type="range" name="cost" min="0" max="500" value="10">
+              <!--тут не понял как прописать от 0 до 500-->
+            </label>
+          </div>
+          <div class="parameters-color">
+            <fieldset class="checkbox-color">
+              <legend class="color-name">color</legend>
+              <ul>
+                <li>
+                  <label class="color-list">
+                    <input class="input-checkbox-color" name="colors" type="checkbox" value="black">
+                    black
+                  </label>
+                </li>
+                <li>
+                  <label class="color-list">
+                    <input class="input-checkbox-color" name="colors" type="checkbox" value="blue">
+                    blue
+                  </label>
+                </li>
+                <li>
+                  <label class="color-list">
+                    <input class="input-checkbox-color" name="colors" type="checkbox" value="green">
+                    green
+                  </label>
+                </li>
+                <li>
+                  <label class="color-list">
+                    <input class="input-checkbox-color" name="colors" type="checkbox" value="white">
+                    white
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <fieldset class="radio-delivery">
+            <legend class="delivery-name">delivery</legend>
+            <ul>
+              <li>
+                <label class="delivery-list">
+                  <input class="input-radio-delivery" name="delivery" type="radio" value="free_shipping">
+                  free shipping
+                </label>
+              </li>
+              <li>
+                <label class="delivery-list">
+                  <input class="input-radio-delivery" name="delivery" type="radio" value="fast_shipping">
+                  fast shipping
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="radio-amount">
+            <legend class="amount-name">amount</legend>
+            <ul>
+              <li>
+                <label class="amount-list">
+                  <input class="input-radio-amount" name="amount" type="radio" value="0-5">
+                  0-5
+                </label>
+              </li>
+              <li>
+                <label class="amount-list">
+                  <input class="input-radio-amount" name="amount" type="radio" value="10-20">
+                  10-20
+                </label>
+              </li>
+              <li>
+                <label class="amount-list">
+                  <input class="input-radio-amount" name="amount" type="radio" value="20-50">
+                  20-50
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">apply</button>
+        </form>
+      </section>
+      <section class="products">
+        <ul class="products-list">
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/sharky_bean.png" alt="sharky_bean.png"></a>
+            <h3 class="products-name">sharky bean bag chair cover</h3>
+            <span class="products-price">$60.00 USD</span>
+          </li>
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/brass_deco.png" alt="brass_deco.png"></a>
+            <h3 class="products-name">brass deco frames</h3>
+            <span class="products-price">$66.00 USD</span>
+          </li>
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/cibo_full.png" alt="cibo_full.png"></a>
+            <h3 class="products-name">cibo full apron</h3>
+            <span class="products-price">$60.00 USD</span>
+          </li>
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/gatcha_gatcha.png" alt="gatcha_gatcha.png"></a>
+            <h3 class="products-name">gatcha gatcha gumball machine</h3>
+            <span class="products-price">$56.00 USD</span>
+          </li>
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/christmas_advent.png" alt="christmas advent.png"></a>
+            <h3 class="products-name">christmas advent scented candle</h3>
+            <span class="products-price">$29.00 USD</span>
+          </li>
+          <li class="products-list-card">
+            <a class="products-card" href="#">
+              <img class="products-image" src="/images/tangle_spinning.png" alt="tangle_spinning.png"></a>
+            <h3 class="products-name">tangle spinning tea light</h3>
+            <span class="products-price">$56.00 USD</span>
+          </li>
+        </ul>
+        <div class="products-page">
+          <a href="#" class="previous">&#8249;</a>
+          <a href="#" class="page">1</a>
+          <a href="#" class="page">2</a>
+          <a href="#" class="page">3</a>
+          <a href="#" class="page">4</a>
+          <a href="#" class="next">&#8250;</a>
+        </div>
+      </section>
+    </div>
+
   </main>
   <footer class="footer">
     <section class="footer-nav">
