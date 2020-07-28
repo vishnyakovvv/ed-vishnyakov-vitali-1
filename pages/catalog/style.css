@@ -30,7 +30,7 @@
 }
 
 .breadcrumbs-item:not(:last-child):after {
-  content: ">";
+  content: url(/images/breadcrumb.svg);
   margin-left: 20px;
   font-style: normal;
 }
@@ -55,11 +55,11 @@
   margin-bottom: 50px;
 }
 
-.catalog-list li:nth-child(6n + 4) {
+.category-list li:nth-child(6n + 4) {
   margin-left: 200px;
 }
 
-.catalog-list {
+.category-list {
   display: flex;
   flex-wrap: wrap;
 
@@ -91,13 +91,11 @@
 }
 
 .category-link {
-  z-index: 1;
+  position: relative;
 }
 
 .card-tittle {
   color: #ffffff;
-
-  width: 200px;
 
   font-size: 26px;
   line-height: 32px;
@@ -105,6 +103,9 @@
   text-transform: uppercase;
 
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* description */
@@ -128,7 +129,9 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 
-  margin-left: 200px;
-
   width: 670px;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: 200px;
 }

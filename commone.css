@@ -224,6 +224,10 @@ h3 {
   padding-left: 15px;
 }
 
+::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
 .connect-button {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
