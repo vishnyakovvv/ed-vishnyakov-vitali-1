@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/pages/toys/style.css">
   <link rel="stylesheet" href="/commone.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
   <title>DLK-Toys</title>
 </head>
@@ -49,91 +49,90 @@
           <span class="breadcrumbs-link breadcrumbs-active">Toys</span>
         </li>
       </ul>
-      <section class="parameters">
-        <h2 class="visually-hidden">parameter toys</h2>
+    </div>
+    <section class="parameters">
+      <h2 class="visually-hidden">parameter toys</h2>
+      <div class="container">
         <form class="parameters-form" action="/pages/toys/index.html">
-          <div class="parameters-cost">
-            <h4 class="form-tittle">cost</h4>
-            <label class="parameter-cost">
-              <input class="range-input" type="range" name="cost" min="0" max="500" value="10">
-              <!--тут не понял как прописать от 0 до 500-->
-            </label>
-          </div>
-          <div class="parameters-color">
-            <fieldset class="checkbox-color">
-              <legend class="color-name">color</legend>
-              <ul>
-                <li>
-                  <label class="color-list">
-                    <input class="input-checkbox-color" name="colors" type="checkbox" value="black">
-                    black
-                  </label>
-                </li>
-                <li>
-                  <label class="color-list">
-                    <input class="input-checkbox-color" name="colors" type="checkbox" value="blue">
-                    blue
-                  </label>
-                </li>
-                <li>
-                  <label class="color-list">
-                    <input class="input-checkbox-color" name="colors" type="checkbox" value="green">
-                    green
-                  </label>
-                </li>
-                <li>
-                  <label class="color-list">
-                    <input class="input-checkbox-color" name="colors" type="checkbox" value="white">
-                    white
-                  </label>
-                </li>
-              </ul>
+          <div class="range-wrap">
+            <fieldset class="fieldset-parameters parameters-cost">
+              <legend class="parameters-name">Cost</legend>
+              <input class="input-wrapper range-input" type="range" name="cost" min="0" max="500" value="10">
+              <div class="tick-range">
+                <div class="left">0</div>
+                <div class="right">500</div>
+              </div>
             </fieldset>
           </div>
-
-          <fieldset class="radio-delivery">
-            <legend class="delivery-name">delivery</legend>
-            <ul>
-              <li>
-                <label class="delivery-list">
-                  <input class="input-radio-delivery" name="delivery" type="radio" value="free_shipping">
-                  free shipping
+          <fieldset class="fieldset-parameters parameters-color">
+            <legend class="parameters-name">Color</legend>
+            <ul class="color-list">
+              <li class="color-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="black">
+                  Black
                 </label>
               </li>
-              <li>
-                <label class="delivery-list">
-                  <input class="input-radio-delivery" name="delivery" type="radio" value="fast_shipping">
-                  fast shipping
+              <li class="color-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="blue">
+                  Blue
                 </label>
               </li>
-            </ul>
-          </fieldset>
-          <fieldset class="radio-amount">
-            <legend class="amount-name">amount</legend>
-            <ul>
-              <li>
-                <label class="amount-list">
-                  <input class="input-radio-amount" name="amount" type="radio" value="0-5">
-                  0-5
+              <li class="color-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="green">
+                  Green
                 </label>
               </li>
-              <li>
-                <label class="amount-list">
-                  <input class="input-radio-amount" name="amount" type="radio" value="10-20">
-                  10-20
-                </label>
-              </li>
-              <li>
-                <label class="amount-list">
-                  <input class="input-radio-amount" name="amount" type="radio" value="20-50">
-                  20-50
+              <li class="color-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="white">
+                  White
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">apply</button>
+          <fieldset class="fieldset-parameters parameters-delivery">
+            <legend class="parameters-name">Delivery</legend>
+            <ul class="delivery-list">
+              <li class="delivery-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-radio-delivery" name="delivery" type="radio" value="free_shipping">
+                  Free shipping
+                </label>
+              </li>
+              <li class="delivery-item">
+                <label class="label-parameters">
+                  <input class="input-wrapper input-radio-delivery" name="delivery" type="radio" value="fast_shipping">
+                  Fast shipping
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset-parameters parameters-amount">
+            <legend class="parameters-name">Amount</legend>
+            <ul class="amount-list">
+              <li class="amount-item">
+                <input id="radio_0-5" name="amount" type="radio" value="0-5">
+                <label for="radio_0-5">0-5</label>
+              </li>
+              <li class="amount-item">
+                <input id="radio_10-20" name="amount" type="radio" value="10-20">
+                <label for="radio_10-20">10-20</label>
+              </li>
+              <li class="amount-item">
+                <input id="radio_20-50" name="amount" type="radio" value="20-50">
+                <label for="radio_20-50">20-50</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="parameters-button button" type="submit">apply</button>
         </form>
-      </section>
+      </div>
+
+    </section>
+    <div class="container">
       <section class="products">
         <ul class="products-list">
           <li class="products-list-card">
@@ -186,63 +185,77 @@
 
   </main>
   <footer class="footer">
-    <section class="footer-nav">
-      <h4 class="footer-nav-tittle">navigation</h4>
-      <ul class="footer-nav-list">
-        <li><a href="#">about us</a></li>
-        <li><a href="#">blog</a></li>
-        <li><a href="#">design services</a></li>
-        <li><a href="#">featured on</a></li>
-        <li><a href="#">2018 holiday catalog</a></li>
-        <li><a href="#">shop by designer</a></li>
-      </ul>
-    </section>
-    <section class="customer">
-      <h4 class="footer-customer-tittle">customer information</h4>
-      <ul class="footer-customer-list">
-        <li><a href="#">contact us</a></li>
-        <li><a href="#">sale exclusions</a></li>
-        <li><a href="#">shipping & returns</a></li>
-        <li><a href="#">terms & conditions</a></li>
-        <li><a href="#">privacy policy</a></li>
-        <li><a href="#">search</a></li>
-      </ul>
-    </section>
-    <section class="connect">
-      <h4 class="footer-connect-tittle">connect</h4>
-      <div class="footer-connect-email">
-        <form action="/index.html" class="footer-connect-form">
-          <input class="connect-email" placeholder="e-mail" type="email" name="email">
-          <button class="connect-button">join</button>
-        </form>
-      </div>
-      <ul class="connect-networks">
-        <li>
-          <a href="#"><img src="/images/soc_facebook.svg" alt="facebook"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_twitter.svg" alt="twitter"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_pinterest.svg" alt="pinterest"></a>
-        </li>
-        <li>
-          <a href="#"><img src="/images/soc_instagram.svg" alt="instagram"></a>
-        </li>
-      </ul>
-    </section>
-    <div class="info">
-      <ul class="info-list">
-        <li class="info-list-companyRating">company rating
-          <div class="stars"></div>
-        </li>
-        <li class="info-list-copyright">
-          copyright © 2018 dlk • design life kids
-        </li>
-        <li class="info-list-webdesign">
-          web design — direct line development
-        </li>
-      </ul>
+    <div class="container">
+      <section class="footer-contanier">
+        <div class="footer-nav">
+          <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-nav-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>about us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>blog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>design services</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>featured on</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
+          </ul>
+        </div>
+        <div class="footer-customer">
+          <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
+          <hr class="nav-line-short">
+          <ul class="footer-customer-list">
+            <li class="nav-list-item"><a class="nav-link" href=#>contact us</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>sale exclusions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>shipping & returns</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>terms & conditions</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
+            <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h4 class="footer-connect-tittle footer-tittle">connect</h4>
+          <hr class="nav-line-short">
+          <div class="footer-connect-email">
+            <form action="index.html" class="footer-connect-form">
+              <input class="connect-email" placeholder="Email" type="email" name="email">
+              <button class="connect-button">join</button>
+            </form>
+          </div>
+          <ul class="connect-networks">
+            <li class="networks-circle">
+              <a class="social-link social-facebook" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-twitter" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-pinterest" href="#"></a>
+            </li>
+            <li class="networks-circle">
+              <a class="social-link social-instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <hr class="nav-line-long">
+        <div class="footer-info">
+          <div class="info-list">
+            <div class="info-list-company">company rating
+              <ul class="stars">
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info-list-copyright">
+            copyright © 2018 dlk • design life kids
+          </div>
+          <div class="info-list-webdesign">
+            web design — direct line development
+          </div>
+        </div>
+      </section>
     </div>
   </footer>
 </body>
