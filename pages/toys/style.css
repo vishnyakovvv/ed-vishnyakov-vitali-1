@@ -75,6 +75,10 @@
   padding: 0;
 }
 
+.parameters-cost {
+  width: 200px;
+}
+
 .parameters-name {
   font-family: "Open Sans", sans-serif;
   color: black;
@@ -181,6 +185,8 @@ input[type="range"]:focus::-ms-fill-upper {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+
+  margin-top: 6px;
 }
 
 .tick-range .left {
@@ -232,13 +238,22 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 
 .parameters-button {
-  background-color: #4caf50; /* Green */
+  height: 40px;
+
+  margin-top: 37px;
+
+  background-color: #000000;
   border: none;
+
   color: white;
-  text-align: center;
-  text-decoration: none;
-  display: block;
+
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  margin: 4px 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  cursor: pointer;
+  padding: 9px 22px;
+
   cursor: pointer;
 }
