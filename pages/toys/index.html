@@ -55,45 +55,43 @@
       <h2 class="visually-hidden">parameter toys</h2>
       <div class="container">
         <form class="parameters-form" action="/pages/toys/index.html">
-          <div class="range-wrap">
-            <fieldset class="fieldset-parameters parameters-cost">
-              <legend class="parameters-name">Cost</legend>
-              <input class="input-wrapper range-input" type="range" name="cost" min="0" max="500" value="10">
-              <div class="tick-range">
-                <div class="left">0</div>
-                <div class="right">500</div>
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="fieldset-parameters parameters-cost">
+            <legend class="parameters-name">Cost</legend>
+            <input class="input-wrapper range-input" type="range" name="cost" min="0" max="500" value="10">
+            <div class="range-cost">
+              <div class="left">0</div>
+              <div class="right">500</div>
+            </div>
+          </fieldset>
           <fieldset class="fieldset-parameters parameters-color">
             <legend class="parameters-name">Color</legend>
             <ul class="color-list">
               <li class="color-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="black">
-                  <span class="fake"></span>
-                  <span>Black</span>
+                  <input class="checkbox-color" name="colors" type="checkbox" value="black">
+                  <span class="color-fake"></span>
+                  <span class="color-label">Black</span>
                 </label>
               </li>
               <li class="color-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="blue">
-                  <span class="fake"></span>
-                  <span>Blue</span>
+                  <input class="checkbox-color" name="colors" type="checkbox" value="blue">
+                  <span class="color-fake"></span>
+                  <span class="color-label">Blue</span>
                 </label>
               </li>
               <li class="color-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="green">
-                  <span class="fake"></span>
-                  <span> Green</span>
+                  <input class="checkbox-color" name="colors" type="checkbox" value="green">
+                  <span class="color-fake"></span>
+                  <span class="color-label"> Green</span>
                 </label>
               </li>
               <li class="color-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-checkbox-color" name="colors" type="checkbox" value="white">
-                  <span class="fake"></span>
-                  <span>White</span>
+                  <input class="checkbox-color" name="colors" type="checkbox" value="white">
+                  <span class="color-fake"></span>
+                  <span class="color-label">White</span>
                 </label>
               </li>
             </ul>
@@ -103,14 +101,16 @@
             <ul class="delivery-list">
               <li class="delivery-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-radio-delivery" name="delivery" type="radio" value="free_shipping">
-                  Free shipping
+                  <input class="radio-delivery" name="delivery" type="radio" value="free_shipping">
+                  <span class="delivery-fake"></span>
+                  <span class="delivery-label">Free shipping</span>
                 </label>
               </li>
               <li class="delivery-item">
                 <label class="label-parameters">
-                  <input class="input-wrapper input-radio-delivery" name="delivery" type="radio" value="fast_shipping">
-                  Fast shipping
+                  <input class="radio-delivery" name="delivery" type="radio" value="fast_shipping">
+                  <span class="delivery-fake"></span>
+                  <span class="delivery-label">Fast shipping</span>
                 </label>
               </li>
             </ul>
