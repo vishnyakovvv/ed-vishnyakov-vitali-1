@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link rel="stylesheet" href="/pages/blog/style.css">
   <link rel="stylesheet" href="/commone.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet">
   <title>DLK-Blog</title>
 </head>
@@ -16,7 +17,7 @@
   <header class="header">
     <div class="container">
       <div class="header-wrapper">
-        <a href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"></a>
+        <a class="header-logo-link" href="/index.html"><img class="header-logo" src="/images/logo.svg" alt="logo"></a>
         <nav class="header-nav">
           <ul class="header-list header-list-left">
             <li class="header-list-item"><a class="header-list-item-link" href="/pages/blog/index.html">blog</a></li>
@@ -28,7 +29,9 @@
             <li class="header-list-item header-search header-list-item-link"> <a href="#"></a><img
                 src="/images/search.png" alt="search"></li>
             <li class="header-list-item header-contactus"><a class="header-list-item-link"
-                href="/pages/contact-us/index.html">contact us</a></li>
+                href="/pages/contact-us/index.html"><span class="header-text-contactus">contact us</span>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -37,71 +40,69 @@
 
   <main>
     <div class="container">
-      <h1 class="blog-tittle">blog</h1>
+      <h1 class="tittle">blog</h1>
       <ul class="breadcrumbs">
-        <li><a href="/index.html">home</a></li>
-        <li class="breadcrumbs-current"><span>blog</span></li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="/index.html">Home</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <span class="breadcrumbs-link breadcrumbs-active">Blog</span>
+        </li>
       </ul>
-      <section class="blog-blocks">
-        <ul class="blocks-list">
-          <li class="blocks-item">
-            <img src="/images/top_5_fastest_1.jpg" alt="top_5_fastest_1.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">top 5 fastest growing it service companies in philly</h3>
-            <p class="blocks-text">direct Line Development’s Team is excited to announce that we received UpCity’s
-              2019
-              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers
-              in
+      <section class="blog-article">
+        <ul class="article-list">
+          <li class="article-item">
+            <img class="article-img" src="/images/top_5_fastest_1.jpg" alt="top_5_fastest_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Top 5 fastest growing it service companies in philly</h3>
+            <p class="article-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019
+              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
               the given marketplace.</p>
           </li>
-          <li class="blocks-item">
-            <img src="/images/best_financial_1.jpg" alt="best_financial_1.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">best financial</h3>
-            <p class="blocks-text">direct Line Development is honored to be recognized as one of the Top 100 Fastest
+          <li class="article-item">
+            <img class="article-img" src="/images/best_financial_1.jpg" alt="best_financial_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Best financial</h3>
+            <p class="article-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest
               Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
           </li>
-          <li class="blocks-item">
-            <img src="/images/company_logo_1.jpg" alt="company_logo_1.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">company logo or brand identity: which one is more important? brand identity</h3>
-            <p class="blocks-text">to survive in the world of digital marketing, you need to keep up with the latest
-              SEO
-              trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          <li class="article-item">
+            <img class="article-img" src="/images/company_logo_1.jpg" alt="company_logo_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Company logo or brand identity: which one is more important? brand identity</h3>
+            <p class="article-text">To survive in the world of digital marketing, you need to keep up with the latest
+              SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
           </li>
-          <li class="blocks-item">
-            <img src="/images/best_financial_2.jpg" alt="top_5_fastest_1.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">best financial</h3>
-            <p class="blocks-text">direct Line Development is honored to be recognized as one of the Top 100 Fastest
+          <li class="article-item">
+            <img class="article-img" src="/images/best_financial_2.jpg" alt="top_5_fastest_1.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Best financial</h3>
+            <p class="article-text">Direct Line Development is honored to be recognized as one of the Top 100 Fastest
               Growing Companies 2019 in Philadelphia, according to Growjo’s ranking.</p>
           </li>
-          <li class="blocks-item">
-            <img src="/images/company_logo_2.jpg" alt="company_logo_2.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">company logo or brand identity: which one is more important? brand identity</h3>
-            <p class="blocks-text">to survive in the world of digital marketing, you need to keep up with the latest
-              SEO
-              trends. Here are our simple, but effective, SEO tips for small business success.</p>
+          <li class="article-item">
+            <img class="article-img" src="/images/company_logo_2.jpg" alt="company_logo_2.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Company logo or brand identity: which one is more important? brand identity</h3>
+            <p class="article-text">To survive in the world of digital marketing, you need to keep up with the latest
+              SEO trends. Here are our simple, but effective, SEO tips for small business success.</p>
           </li>
-          <li class="blocks-item">
-            <img src="/images/top_5_fastest_2.jpg" alt="top_5_fastest_2.jpg">
-            <p class="blocks-date">23rd August 2018</p>
-            <h3 class="blocks-tittle">top 5 fastest growing it service companies in philly</h3>
-            <p class="blocks-text">Direct Line Development’s Team is excited to announce that we received UpCity’s
-              2019
-              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers
-              in
+          <li class="article-item">
+            <img class="article-img" src="/images/top_5_fastest_2.jpg" alt="top_5_fastest_2.jpg">
+            <span class="article-date">23rd August 2018</span>
+            <h3 class="article-tittle">Top 5 fastest growing it service companies in philly</h3>
+            <p class="article-text">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019
+              Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in
               the given marketplace.</p>
           </li>
         </ul>
-        <div class="blocks-page">
-          <a href="#" class="previous">&#8249;</a>
-          <a href="#" class="page">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <a href="#" class="page">4</a>
-          <a href="#" class="next">&#8250;</a>
+        <div class="pages">
+          <a class="prev" href="#"></a>
+          <a class="page" href="#"><span class="page-nomber">1</span></a>
+          <a class="page" href="#"><span class="page-nomber">2</span></a>
+          <a class="page" href="#"><span class="page-nomber">3</span></a>
+          <a class="page" href="#"><span class="page-nomber">4</span></a>
+          <a class="next" href="#"></a>
         </div>
       </section>
   </main>
@@ -109,7 +110,7 @@
   <footer class="footer">
     <div class="container">
       <section class="footer-contanier">
-        <section class="footer-nav">
+        <div class="footer-nav">
           <h4 class="footer-nav-tittle footer-tittle">navigation</h4>
           <hr class="nav-line-short">
           <ul class="footer-nav-list">
@@ -120,8 +121,8 @@
             <li class="nav-list-item"><a class="nav-link" href=#>2018 holiday catalog</a></li>
             <li class="nav-list-item"><a class="nav-link" href=#>shop by designer</a></li>
           </ul>
-        </section>
-        <section class="footer-customer">
+        </div>
+        <div class="footer-customer">
           <h4 class="footer-customer-tittle footer-tittle">customer information</h4>
           <hr class="nav-line-short">
           <ul class="footer-customer-list">
@@ -132,8 +133,8 @@
             <li class="nav-list-item"><a class="nav-link" href=#>privacy policy</a></li>
             <li class="nav-list-item"><a class="nav-link" href=#>search</a></li>
           </ul>
-        </section>
-        <section class="footer-connect">
+        </div>
+        <div class="footer-connect">
           <h4 class="footer-connect-tittle footer-tittle">connect</h4>
           <hr class="nav-line-short">
           <div class="footer-connect-email">
@@ -156,10 +157,10 @@
               <a class="social-link social-instagram" href="#"></a>
             </li>
           </ul>
-        </section>
+        </div>
         <hr class="nav-line-long">
-        <section class="footer-info">
-          <section class="info-list">
+        <div class="footer-info">
+          <div class="info-list">
             <div class="info-list-company">company rating
               <ul class="stars">
                 <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
@@ -169,16 +170,16 @@
                 <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
               </ul>
             </div>
-          </section>
-          <section class="info-list-copyright">
+          </div>
+          <div class="info-list-copyright">
             copyright © 2018 dlk • design life kids
-          </section>
-          <section class="info-list-webdesign">
+          </div>
+          <div class="info-list-webdesign">
             web design — direct line development
-          </section>
-        </section>
+          </div>
+        </div>
+      </section>
     </div>
-    </section>
   </footer>
 </body>
 
