@@ -24,6 +24,57 @@ h3 {
   margin: 0;
 }
 
+.tittle {
+  text-transform: uppercase;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  line-height: 44px;
+
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/* breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+
+  margin-bottom: 50px;
+
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  font-family: "Crimson Text", serif;
+  font-size: 20px;
+  line-height: 25px;
+
+  display: inline-block;
+
+  margin-right: 16px;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: url(/images/breadcrumb.svg);
+  margin-left: 17px;
+  font-style: normal;
+}
+
+.breadcrumbs-link {
+  color: #1e0606;
+  text-decoration: none;
+}
+
+.breadcrumbs-link:not(span):hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs-active {
+  color: #1e0606;
+  opacity: 0.5;
+}
+
 /* Header */
 
 .header {
@@ -79,9 +130,23 @@ h3 {
 }
 
 .header-contactus {
-  font-weight: 700;
   margin-right: 0;
   margin-left: 23.45px;
+}
+
+.header-text-contactus {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.header-logo-link:hover,
+.header-list-item:hover {
+  opacity: 50%;
+}
+
+.header-logo-link:active,
+.header-list-item:active {
+  opacity: 25%;
 }
 
 /* footer */
@@ -150,7 +215,7 @@ h3 {
 }
 
 .nav-list-item {
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .nav-link {
@@ -308,13 +373,13 @@ h3 {
 
 .stars-company {
   margin-top: 1px;
-  margin-right: 2.88px;
+  margin-right: 6px;
 }
 
 .stars {
   display: flex;
 
-  margin: 0 0 0 25px;
+  margin: 0 0 0 28px;
 
   padding: 0;
 
@@ -336,9 +401,9 @@ h3 {
 .pages {
   position: relative;
 
-  margin-bottom: 60px;
-
   text-align: center;
+
+  padding-bottom: 3px;
 }
 
 .page {
@@ -362,12 +427,12 @@ h3 {
 .next:before {
   background-color: #e5e5e5;
   content: "";
-  height: 17px;
+  height: 20px;
   left: 4px;
   position: absolute;
-  top: 0;
+  top: 1px;
   transform: rotate(45deg);
-  width: 17px;
+  width: 20px;
 }
 .next:before {
   left: auto;
@@ -377,12 +442,12 @@ h3 {
 .next:after {
   background-color: white;
   content: "";
-  height: 17px;
-  left: 8px;
+  height: 20px;
+  left: 9px;
   position: absolute;
-  top: 0;
+  top: 1px;
   transform: rotate(45deg);
-  width: 17px;
+  width: 20px;
 }
 .next:after {
   left: auto;
