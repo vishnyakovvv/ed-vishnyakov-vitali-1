@@ -330,3 +330,69 @@ h3 {
   width: 380px;
   color: #a2a2a2;
 }
+
+/* pages  */
+
+.pages {
+  position: relative;
+
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.page {
+  line-height: 20px;
+  padding: 0;
+  margin: 0 26px 0 36px;
+  font-size: 20px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  height: 17px;
+  width: 10px;
+  top: 4px;
+}
+.next {
+  float: right;
+}
+.prev:before,
+.next:before {
+  background-color: #e5e5e5;
+  content: "";
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+.next:before {
+  left: auto;
+  right: 4px;
+}
+.prev:after,
+.next:after {
+  background-color: white;
+  content: "";
+  height: 17px;
+  left: 8px;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  width: 17px;
+}
+.next:after {
+  left: auto;
+  right: 8px;
+}
+
+.page-nomber {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  color: #1e0606;
+}
