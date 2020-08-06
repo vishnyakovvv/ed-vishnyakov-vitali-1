@@ -67,7 +67,7 @@ h3 {
 }
 
 .breadcrumbs-link:not(span):hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .breadcrumbs-active {

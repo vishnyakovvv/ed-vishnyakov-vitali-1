@@ -209,9 +209,15 @@ input[type="range"]:focus::-ms-fill-upper {
   opacity: 1;
 }
 
+.color-label:hover {
+  text-decoration: underline;
+}
+
 .color-label,
 .color-fake {
   vertical-align: middle;
+
+  cursor: pointer;
 }
 
 /* parameters-delivery */
@@ -230,6 +236,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 .delivery-item {
   margin-bottom: 9px;
+  cursor: pointer;
 }
 
 .radio-delivery {
@@ -273,9 +280,15 @@ input[type="range"]:focus::-ms-fill-upper {
   opacity: 1;
 }
 
+.delivery-label:hover {
+  text-decoration: underline;
+}
+
 .delivery-label,
 .delivery-fake {
   vertical-align: middle;
+
+  cursor: pointer;
 }
 
 /* parameters-amount */
@@ -300,6 +313,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 .amount-item {
   display: inline-block;
+
   float: left;
 }
 
@@ -310,8 +324,6 @@ input[type="range"]:focus::-ms-fill-upper {
 .amount-list label {
   width: 80px;
   display: inline-block;
-
-  cursor: pointer;
 
   line-height: 34px;
 
@@ -327,6 +339,8 @@ input[type="range"]:focus::-ms-fill-upper {
 .amount-list label:hover {
   color: #877379;
   background-color: #eddeeb;
+
+  text-decoration: none;
 }
 
 .amount-label,
@@ -351,6 +365,8 @@ input[type="range"]:focus::-ms-fill-upper {
   margin-top: 35px;
 
   border: none;
+
+  cursor: pointer;
 }
 
 /* PRODUCTS */
