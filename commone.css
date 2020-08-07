@@ -495,10 +495,7 @@ h3 {
   opacity: 0.5;
 }
 
-.page-nomber:active {
-  color: #c29974;
-}
-
+.page-nomber:active,
 .page-nomber:focus {
   color: #c29974;
 }
