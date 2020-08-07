@@ -57,7 +57,7 @@
               <div class="slider__tittle-text-link">
                 <h2 class="slide-title">the ooh noo collection</h2>
                 <p class="slide-text">Designed in Slovenia</p>
-                <div class="slide-link"><a class="slide-link-text" href="#">explore now</a></div>
+                <div class="slide-link"><a class="link" href="#">explore now</a></div>
               </div>
               <div class="slide-bottom-info">
                 <p class="slide-bottom-text"> free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -142,7 +142,7 @@
                 to thank!
               </p>
             </div>
-            <div class="service-link"><a class="service-link-text" href="#">learn more</a></div>
+            <div class="service-link"><a class="link" href="#">learn more</a></div>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
                 there are other days that i am completely shocked that four years have
                 flown by. It's simply magical.
               </p>
-              <div class="design-link"><a class="design-link-text" href="#">buy now</a></div>
+              <div class="design-link"><a class="link" href="#">buy now</a></div>
             </div>
           </div>
           <div class="contacts-container">
@@ -274,31 +274,40 @@
       </section>
     </div>
   </footer>
-  <!-- <form class="contakt-us-form" action="/index.html"
-    <label class="form-label">
-      name
-      <input class="input-text" type="text" name="name">
-    </label>
-    <label class="form-label">
-      phone
-      <input class="input-text" type="tel" name="phone">
-    </label>
-    <label class="form-label">
-      email
-      <input class="input-text" type="email" name="email">
-    </label>
-    <label class="form-label">
-      message
-      <textarea name="message" cols="30" rows="10"></textarea>
-    </label>
-    <div class="subscribe">
-      <input type="checkbox" name="subscribe" value="personal data">
-      <label class="form-label">by clicking on the button, you consent to the processing of your personal data
+  <div class="window-modal">
+    <form class="form-wrapper" action="/index.html">
+      <label class="form-lable">
+        <input class="input-text input-name" type="text" name="name">
+        <span class="input-lable-text">Name</span>
       </label>
-    </div>
-    <button class="form-button" type="submit">submit</button>
-    <button class="form-button-exit" type="button">exit</button>
-  </form> -->
+      <div class="form-phone-email">
+        <div class="form-cell-50 input-phone">
+          <label class="form-lable">
+            <input class="input-text" type="tel" name="phone">
+            <span class="input-lable-text">Phone</span>
+          </label>
+        </div>
+        <div class="form-cell-50 input-email">
+          <label class="form-lable">
+            <input class="input-text" type="email" name="email">
+            <span class="input-lable-text">Email</span>
+          </label>
+        </div>
+      </div>
+      <label class="form-lable">
+        <textarea class="form-message" name="message" cols="30" rows="10"></textarea>
+        <span class="input-lable-text">Message</span>
+      </label>
+      <label class="form-subscribe">
+        <input class="subscribe-checkbox" type="checkbox" name="subscribe" value="personal data">
+        <span class="subscribe-fake"></span>
+        <span class="subscribe-text">By clicking on the button, you consent to the processing of your personal
+          data</span>
+      </label>
+      <button class="form-button" type="submit">submit</button>
+      <button class="button-close" type="button" aria-label="exit"></button>
+    </form>
+  </div>
 </body>
 
 </html>

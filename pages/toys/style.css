@@ -189,7 +189,7 @@ input[type="range"]:focus::-ms-fill-upper {
 .color-fake::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 51%;
   transform: translate(-50%, -50%);
 
@@ -200,13 +200,16 @@ input[type="range"]:focus::-ms-fill-upper {
   background-repeat: no-repeat;
   background-size: 16px 14px;
 
-  background-color: #ffffff;
   opacity: 0;
   transition: 0.2s;
 }
 
 .checkbox-color:checked + .color-fake::before {
   opacity: 1;
+}
+
+.label-parameters input:checked ~ .color-fake {
+  background-color: #ffffff;
 }
 
 .color-label:hover {
@@ -380,7 +383,6 @@ input[type="range"]:focus::-ms-fill-upper {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   padding: 0;
 
@@ -388,17 +390,18 @@ input[type="range"]:focus::-ms-fill-upper {
   margin-bottom: 34px;
 }
 
-.products-list li:nth-child(6n + 6) {
-  margin-top: 4px;
+.products-list li:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
-.products-list-card {
+.products-item {
   width: 380px;
   text-align: center;
 
   display: flex;
   flex-direction: column;
 
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
