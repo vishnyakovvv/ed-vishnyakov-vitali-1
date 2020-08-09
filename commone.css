@@ -50,12 +50,69 @@ h3 {
   padding: 9px 22px;
 }
 
-.link:hover {
-  background-color: #c29974;
+.button {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  background-color: black;
+
+  text-align: center;
+
+  padding: 9px 22px;
+
+  border: none;
+
+  cursor: pointer;
 }
 
-.link:active {
+.link:hover,
+.button:hover {
+  background-color: #c29974;
+
+  outline: none;
+}
+
+.link:focus,
+.button:focus {
+  outline: none;
+}
+
+.link:active,
+.button:active {
   background-color: #cfaf91;
+
+  outline: none;
+}
+
+.category-link {
+  position: relative;
+}
+
+.card-tittle {
+  color: #ffffff;
+
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-tittle:hover,
+.card-tittle:active {
+  text-decoration: underline;
+}
+
+.category-image {
+  display: block;
 }
 
 /* breadcrumbs */
@@ -237,6 +294,18 @@ h3 {
   margin-bottom: 19px;
 }
 
+.nav-list-item:hover {
+  color: #ffffff;
+
+  opacity: 0.5;
+}
+
+.nav-list-item:active {
+  color: #ffffff;
+
+  opacity: 0.2;
+}
+
 .nav-link {
   text-transform: capitalize;
 
@@ -308,6 +377,15 @@ h3 {
   padding-left: 15px;
 }
 
+.connect-email:hover,
+.connect-email:active,
+.connect-email:focus {
+  border: 1px solid #fffdfd;
+  box-sizing: border-box;
+
+  outline: none;
+}
+
 ::-webkit-input-placeholder {
   color: #ffffff;
 }
@@ -341,6 +419,14 @@ h3 {
   height: 30px;
 
   background: center no-repeat;
+}
+
+.social-link:hover {
+  opacity: 0.5;
+}
+
+.social-link:active {
+  opacity: 0.2;
 }
 
 .social-facebook {
@@ -390,7 +476,80 @@ h3 {
   margin-right: 20px;
 }
 
-.stars-company {
+/* stars */
+/*sprite with stars*/
+#stars-input input:checked ~ label,
+#stars-input label,
+#stars-input label:hover,
+#stars-input label:hover ~ label {
+  background: url("/images/Star.svg") no-repeat;
+}
+
+#stars-input {
+  overflow: hidden;
+  *zoom: 1;
+
+  position: relative;
+  float: left;
+}
+
+#stars-input input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+
+  width: 43px;
+  height: 40px;
+
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+#stars-input input:checked ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#stars-input label {
+  background-position: 0 0;
+  height: 40px;
+  width: 43px;
+  float: right;
+  cursor: pointer;
+  margin-right: 10px;
+
+  position: relative;
+  z-index: 1;
+}
+
+#stars-input label:hover,
+#stars-input label:hover ~ label {
+  background-position: 0 -40px;
+  height: 40px;
+  width: 43px;
+}
+
+#stars-input #star-0 {
+  left: 0px;
+}
+#stars-input #star-1 {
+  left: 53px;
+}
+#stars-input #star-2 {
+  left: 106px;
+}
+#stars-input #star-3 {
+  left: 159px;
+}
+#stars-input #star-4 {
+  left: 212px;
+}
+#stars-input #star-5 {
+  left: 265px;
+}
+/* ... */
+/* .stars-company {
   margin-top: 1px;
   margin-right: 6px;
 }
@@ -403,7 +562,7 @@ h3 {
   padding: 0;
 
   list-style-type: none;
-}
+} */
 
 .info-list-copyright {
   width: 380px;
@@ -413,6 +572,15 @@ h3 {
 .info-list-webdesign {
   width: 380px;
   color: #a2a2a2;
+
+  cursor: pointer;
+}
+
+.info-list-webdesign:hover,
+.info-list-webdesign:active {
+  color: #ffffff;
+
+  text-decoration: underline;
 }
 
 /* pages  */
@@ -538,7 +706,23 @@ h3 {
   padding: 14px 19px;
 }
 
-.input-name {
+.input-text:hover,
+.form-message:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  outline: none;
+}
+
+.input-text:active,
+.form-message:active {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  outline: none;
+}
+
+.input-text:focus,
+.form-message:focus {
+  outline: none;
 }
 
 .form-phone-email {
@@ -642,17 +826,10 @@ h3 {
 
 .form-button {
   align-self: start;
+}
 
-  background-color: #000000;
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  display: block;
+.input-form:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
 
-  padding: 11px 22px;
-
-  border: none;
-  cursor: pointer;
+  outline: none;
 }

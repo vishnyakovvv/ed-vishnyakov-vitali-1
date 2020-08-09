@@ -16,7 +16,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  padding: 42px 85px 42px 0;
+  padding: 43px 85px 42px 0;
 
   align-items: start;
 }
@@ -31,7 +31,7 @@
 
 .parameters-cost {
   width: 206px;
-  margin-right: 94px;
+  margin-right: 95px;
 }
 
 .parameters-name {
@@ -296,7 +296,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 /* parameters-amount */
 .parameters-amount {
-  margin-right: 60px;
+  margin-right: 59px;
 }
 
 .amount-list {
@@ -353,23 +353,7 @@ input[type="range"]:focus::-ms-fill-upper {
 
 /* parameters-button */
 .parameters-button {
-  background-color: #000000;
-
-  font-family: "Open Sans", sans-serif;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-
-  display: block;
-
-  padding: 11px 22px;
-
   margin-top: 35px;
-
-  border: none;
-
-  cursor: pointer;
 }
 
 /* PRODUCTS */

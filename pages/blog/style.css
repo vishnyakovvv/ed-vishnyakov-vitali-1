@@ -54,6 +54,11 @@
   margin-bottom: 15px;
 }
 
+.article-tittle:hover,
+.article-tittle:active {
+  text-decoration: underline;
+}
+
 .article-text {
   font-family: "Open Sans", sans-serif;
   font-style: normal;

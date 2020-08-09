@@ -39,24 +39,6 @@
   margin-bottom: 0;
 }
 
-.category-link {
-  position: relative;
-}
-
-.card-tittle {
-  color: #ffffff;
-
-  font-size: 26px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 /* description */
 
 .description {

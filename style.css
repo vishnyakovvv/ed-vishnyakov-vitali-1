@@ -2,7 +2,7 @@
 
 .slideshow-container {
   padding-top: 89px;
-  margin-bottom: 90px;
+  margin-bottom: 91px;
 }
 
 .slide-list {
@@ -109,7 +109,7 @@
 }
 
 .slide-bottom-info {
-  margin-top: 98px;
+  margin-top: 99px;
 }
 
 .slide-bottom-text {
@@ -142,7 +142,7 @@
   line-height: 46px;
 
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .category-list {
@@ -171,26 +171,8 @@
   cursor: pointer;
 }
 
-.category-link {
-  position: relative;
-}
-
 .category-list-accessories {
   margin-right: 0;
-}
-
-.card-tittle {
-  color: #ffffff;
-
-  font-size: 26px;
-  line-height: 32px;
-  text-align: center;
-  text-transform: uppercase;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .category-button-text {
@@ -204,6 +186,8 @@
   border: none;
 
   padding: 0;
+
+  margin-top: 2px;
 }
 
 .category-link {
@@ -259,7 +243,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 85px;
+  margin-bottom: 87px;
 }
 
 .service-wrapper {
@@ -279,9 +263,7 @@
   font-size: 38px;
   line-height: 46px;
 
-  margin-top: 30px;
-  margin-bottom: 6px;
-  margin-left: 61px;
+  margin: 32px 0 6px 61px;
 }
 
 .service-list {
@@ -320,7 +302,7 @@
   line-height: 22px;
 
   margin-left: 121px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
 
   width: 470px;
 
@@ -346,7 +328,7 @@
 /* partners */
 
 .partners-container {
-  margin-bottom: 88px;
+  margin-bottom: 87px;
 }
 
 .partners-list {
