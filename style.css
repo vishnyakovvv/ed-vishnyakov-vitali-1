@@ -365,15 +365,15 @@
 /* design-contacts */
 
 .design-contacts {
-  margin-bottom: 60px;
+  margin-bottom: 55px;
 }
 
 .design-contacts-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 0;
-  margin-bottom: 182px;
+
+  padding: 0;
+
   position: relative;
 }
 
@@ -383,6 +383,10 @@
   margin-right: 100px;
 
   padding-left: 30px;
+}
+
+.design-text {
+  width: 470px;
 
   position: relative;
 
@@ -412,20 +416,16 @@
   margin: 0 0 10px 0;
 }
 
-.design-text {
+.design-paragraph {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 22px;
   font-style: normal;
 
   color: #1e0606;
 
-  margin: 0 0 33px 0;
-
-  width: 470px;
-
-  z-index: 2;
+  margin: 0 0 31px 0;
 }
 
 .design-bg {
@@ -442,11 +442,16 @@
 }
 
 /* contacts */
-.contacts-container {
-}
 
 .contacts-wrapper {
   position: relative;
+
+  padding-left: 30px;
+}
+
+.contacts-text-map {
+  position: relative;
+  z-index: 1;
 }
 
 .contacts-bg {
@@ -456,7 +461,7 @@
   min-height: 209px;
 
   position: absolute;
-  left: 500px;
+  left: 0;
   top: 26px;
 
   z-index: 0;
@@ -472,15 +477,17 @@
   font-size: 38px;
   line-height: 46px;
 
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 
-.contacts-text {
+.contacts-paragraph {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 23px;
 
   width: 470px;
+
+  margin: 0 0 20px 0;
 }
 
 /* Window-Modal */
