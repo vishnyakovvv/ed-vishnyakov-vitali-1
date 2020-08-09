@@ -43,7 +43,9 @@ h3 {
   font-size: 16px;
   line-height: 22px;
 
-  display: block;
+  background-color: black;
+
+  text-align: center;
 
   padding: 9px 22px;
 }
