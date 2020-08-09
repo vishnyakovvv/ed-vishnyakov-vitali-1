@@ -57,7 +57,7 @@
               <div class="slider__tittle-text-link">
                 <h2 class="slide-title">the ooh noo collection</h2>
                 <p class="slide-text">Designed in Slovenia</p>
-                <a class="link" href="#">explore now</a>
+                <a class="link button-open_js" href="#">explore now</a>
               </div>
               <div class="slide-bottom-info">
                 <p class="slide-bottom-text"> free (continental) USA shipping on all orders of $100 USD or more!</p>
@@ -67,7 +67,6 @@
         </ul>
       </div>
     </section>
-
     <section class="category-container">
       <div class="container">
         <h2 class="category-tittle">category products</h2>
@@ -109,7 +108,6 @@
         </div>
       </div>
     </section>
-
     <section class="service-container">
       <div class="container">
         <div class="service-wrapper">
@@ -147,7 +145,6 @@
         </div>
       </div>
     </section>
-
     <section class="partners-container">
       <div class="container">
         <h2 class="visually-hidden">partners</h2>
@@ -167,7 +164,6 @@
         </ul>
       </div>
     </section>
-
     <section class="design-contacts">
       <div class="container">
         <div class="design-contacts-wrapper">
@@ -196,11 +192,8 @@
             </div>
             <div class="contacts-bg"></div>
           </div>
-
-
         </div>
-    </section>
-    </div>
+      </div>
     </section>
   </main>
 
@@ -237,7 +230,7 @@
           <div class="footer-connect-email">
             <form action="index.html" class="footer-connect-form">
               <input class="connect-email" placeholder="Email" type="email" name="email">
-              <button class="connect-button">join</button>
+              <button class="button">join</button>
             </form>
           </div>
           <ul class="connect-networks">
@@ -258,20 +251,22 @@
         <hr class="nav-line-long">
         <div class="footer-info">
           <div class="info-list">
-            <div class="info-list-company">company rating
-              <div id="stars-input">
-                <input id="star-5" type="radio" name="stars" />
-                <label title="5" for="star-5"></label>
-                <input id="star-4" type="radio" name="stars" />
-                <label title="4" for="star-4"></label>
-                <input id="star-3" type="radio" name="stars" />
-                <label title="3" for="star-3"></label>
-                <input id="star-2" type="radio" name="stars" />
-                <label title="2" for="star-2"></label>
-                <input id="star-1" type="radio" name="stars" />
-                <label title="1" for="star-1"></label>
+            <div class="info-list-company">
+              <span class="company_rating">company rating</span>
+              <div class="stars-wrapper">
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="star" value="5">
+                  <label for="star-5" title="«5»"></label>
+                  <input type="radio" id="star-4" name="star" value="4">
+                  <label for="star-4" title="«4»"></label>
+                  <input type="radio" id="star-3" name="star" value="3">
+                  <label for="star-3" title="«3»"></label>
+                  <input type="radio" id="star-2" name="star" value="2">
+                  <label for="star-2" title="«2»"></label>
+                  <input type="radio" id="star-1" name="star" value="1">
+                  <label for="star-1" title="«1»"></label>
+                </div>
               </div>
-
             </div>
           </div>
           <div class="info-list-copyright">
@@ -284,10 +279,10 @@
       </section>
     </div>
   </footer>
-  <div class="window-modal">
+  <div class="modal-bg modal_js">
     <form class="form-wrapper" action="/index.html">
       <label class="form-lable">
-        <input class="input-text input-name" type="text" name="name">
+        <input class="input-text input-name input-text_js" type="text" name="name">
         <span class="input-lable-text">Name</span>
       </label>
       <div class="form-phone-email">
@@ -314,10 +309,11 @@
         <span class="subscribe-text">By clicking on the button, you consent to the processing of your personal
           data</span>
       </label>
-      <button class="form-button" type="submit">submit</button>
-      <button class="button-close" type="button" aria-label="exit"></button>
+      <button class="form-button button" type="submit">submit</button>
+      <button class="button-close button-close_js" type="button" aria-label="exit"></button>
     </form>
   </div>
+  <script src="/main.js"></script>
 </body>
 
 </html>

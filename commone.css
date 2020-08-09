@@ -39,7 +39,7 @@ h3 {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 
@@ -256,7 +256,7 @@ h3 {
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding: 100px 0;
+  padding: 101px 0;
 }
 .footer-nav {
   margin-right: 20px;
@@ -455,7 +455,7 @@ h3 {
 
   width: 100%;
 
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .info-list {
@@ -476,101 +476,58 @@ h3 {
   margin-right: 20px;
 }
 
+.info-list-company:hover {
+  color: #c29974;
+}
+
 /* stars */
-/*sprite with stars*/
-#stars-input input:checked ~ label,
-#stars-input label,
-#stars-input label:hover,
-#stars-input label:hover ~ label {
-  background: url("/images/Star.svg") no-repeat;
-}
-
-#stars-input {
+.rating-area {
   overflow: hidden;
-  *zoom: 1;
 
-  position: relative;
-  float: left;
+  width: 127px;
+
+  margin: 0;
 }
-
-#stars-input input {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-
-  width: 43px;
-  height: 40px;
-
-  position: absolute;
-  top: 0;
-  z-index: 0;
+.rating-area:not(:checked) > input {
+  display: none;
 }
-
-#stars-input input:checked ~ label {
-  background-position: 0 -40px;
-  height: 40px;
-  width: 43px;
-}
-
-#stars-input label {
-  background-position: 0 0;
-  height: 40px;
-  width: 43px;
+.rating-area:not(:checked) > label {
   float: right;
-  cursor: pointer;
-  margin-right: 10px;
 
-  position: relative;
-  z-index: 1;
-}
-
-#stars-input label:hover,
-#stars-input label:hover ~ label {
-  background-position: 0 -40px;
-  height: 40px;
-  width: 43px;
-}
-
-#stars-input #star-0 {
-  left: 0px;
-}
-#stars-input #star-1 {
-  left: 53px;
-}
-#stars-input #star-2 {
-  left: 106px;
-}
-#stars-input #star-3 {
-  left: 159px;
-}
-#stars-input #star-4 {
-  left: 212px;
-}
-#stars-input #star-5 {
-  left: 265px;
-}
-/* ... */
-/* .stars-company {
-  margin-top: 1px;
-  margin-right: 6px;
-}
-
-.stars {
-  display: flex;
-
-  margin: 0 0 0 28px;
+  width: 20px;
 
   padding: 0;
 
-  list-style-type: none;
-} */
+  cursor: pointer;
+
+  font-size: 19px;
+
+  color: #ffffff;
+}
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.rating-area > input:checked ~ label {
+  color: #c29974;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #836e5b;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
 
 .info-list-copyright {
   width: 380px;
+
   margin-right: 20px;
 }
 
 .info-list-webdesign {
   width: 380px;
+
   color: #a2a2a2;
 
   cursor: pointer;
@@ -681,8 +638,6 @@ h3 {
   background-color: #e5eaf8;
 
   padding: 42px 40px;
-
-  margin-right: 120px;
 
   width: 680px;
 }

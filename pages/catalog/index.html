@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
   <link rel="stylesheet" href="/pages/catalog/style.css">
   <link rel="stylesheet" href="/commone.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,600;1,700&family=Montserrat:wght@200;300;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap"
     rel="stylesheet">
-  <title>DLK</title>
+  <title>DLK-Catalog</title>
 </head>
 
 <body>
@@ -89,26 +90,28 @@
             </a>
           </li>
         </ul>
+
+        <div class="description">
+          <h3 class="description-tittle">Product Description</h3>
+          <p class="description-text">
+            Interactive doll Zapf Creation Baby Born Sister can drink from a
+            bottle and almost really cry. You can even bathe her, just like a
+            little sister.
+          </p>
+          <p class="description-text">
+            A toy with a height of 43 cm bends its knees, the head rotates, it can
+            stand upright. Such a doll will be an excellent choice for a gift for
+            a girl from 4 years old.
+          </p>
+          <p class="description-text">
+            The set includes a miniature set of fashionable clothes, a hairbrush,
+            a bottle for water, a pair of hairpins and elastic bands for hair, as
+            well as two bracelets: one for the doll, the other for her young
+            mistress.
+          </p>
+        </div>
       </section>
-      <section class="description">
-        <h3 class="description-tittle">Product Description</h3>
-        <p class="description-text">
-          Interactive doll Zapf Creation Baby Born Sister can drink from a
-          bottle and almost really cry. You can even bathe her, just like a
-          little sister.
-        </p>
-        <p class="description-text">
-          A toy with a height of 43 cm bends its knees, the head rotates, it can
-          stand upright. Such a doll will be an excellent choice for a gift for
-          a girl from 4 years old.
-        </p>
-        <p class="description-text">
-          The set includes a miniature set of fashionable clothes, a hairbrush,
-          a bottle for water, a pair of hairpins and elastic bands for hair, as
-          well as two bracelets: one for the doll, the other for her young
-          mistress.
-        </p>
-      </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -144,7 +147,7 @@
           <div class="footer-connect-email">
             <form action="index.html" class="footer-connect-form">
               <input class="connect-email" placeholder="Email" type="email" name="email">
-              <button class="connect-button">join</button>
+              <button class="button">join</button>
             </form>
           </div>
           <ul class="connect-networks">
@@ -165,14 +168,22 @@
         <hr class="nav-line-long">
         <div class="footer-info">
           <div class="info-list">
-            <div class="info-list-company">company rating
-              <ul class="stars">
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              </ul>
+            <div class="info-list-company">
+              <span class="company_rating">company rating</span>
+              <div class="stars-wrapper">
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="star" value="5">
+                  <label for="star-5" title="«5»"></label>
+                  <input type="radio" id="star-4" name="star" value="4">
+                  <label for="star-4" title="«4»"></label>
+                  <input type="radio" id="star-3" name="star" value="3">
+                  <label for="star-3" title="«3»"></label>
+                  <input type="radio" id="star-2" name="star" value="2">
+                  <label for="star-2" title="«2»"></label>
+                  <input type="radio" id="star-1" name="star" value="1">
+                  <label for="star-1" title="«1»"></label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="info-list-copyright">

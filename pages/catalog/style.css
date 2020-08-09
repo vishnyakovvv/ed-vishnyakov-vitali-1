@@ -60,9 +60,11 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 
+  font-size: 16px;
+  line-height: 22px;
+
   width: 670px;
 
   margin-top: 0;
-  margin-bottom: 15px;
   margin-left: 200px;
 }

@@ -243,7 +243,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin-bottom: 87px;
+  margin-bottom: 88px;
 }
 
 .service-wrapper {
@@ -328,7 +328,7 @@
 /* partners */
 
 .partners-container {
-  margin-bottom: 87px;
+  margin-bottom: 86px;
 }
 
 .partners-list {
@@ -418,7 +418,7 @@
 
   position: absolute;
   left: 0;
-  top: 26px;
+  top: 25px;
 
   z-index: 0;
 }
@@ -444,7 +444,7 @@
 
   position: absolute;
   left: 0;
-  top: 26px;
+  top: 25px;
 
   z-index: 0;
 }
@@ -474,7 +474,9 @@
 
 /* Window-Modal */
 
-.window-modal {
+.modal-bg {
+  display: flex;
+
   display: none;
 
   position: fixed;
@@ -488,7 +490,12 @@
   z-index: 2;
 }
 
+.modal-bg_open {
+  display: flex;
+}
+
 .form-wrapper {
+  margin: auto;
   position: relative;
 }
 
@@ -506,22 +513,14 @@
   background: url(/images/exit.svg);
 }
 
-/* .button-close::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 15px;
-  width: 2px;
-  background-color: #ffffff;
-  transform: rotate(45deg);
+.button-close:hover {
+  color: #ffffff;
+  opacity: 0.5;
 }
-
-.button-close::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 15px;
-  width: 2px;
-  background-color: #ffffff;
-  transform: rotate(-45deg);
-} */
+.button-close:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+.button-close:focus {
+  outline: none;
+}

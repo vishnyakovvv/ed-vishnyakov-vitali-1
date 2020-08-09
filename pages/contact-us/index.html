@@ -52,6 +52,7 @@
     </div>
 
     <section class="conact-us">
+      <h2 class="visually-hidden">conact-us</h2>
       <div class="container">
         <div class="conact-us-wrapper">
           <form class="form-wrapper" action="/index.html">
@@ -130,7 +131,7 @@
           <div class="footer-connect-email">
             <form action="index.html" class="footer-connect-form">
               <input class="connect-email" placeholder="Email" type="email" name="email">
-              <button class="connect-button">join</button>
+              <button class="button">join</button>
             </form>
           </div>
           <ul class="connect-networks">
@@ -151,14 +152,22 @@
         <hr class="nav-line-long">
         <div class="footer-info">
           <div class="info-list">
-            <div class="info-list-company">company rating
-              <ul class="stars">
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-                <li class="stars-company"><img src="/images/Star.svg" alt="star"></li>
-              </ul>
+            <div class="info-list-company">
+              <span class="company_rating">company rating</span>
+              <div class="stars-wrapper">
+                <div class="rating-area">
+                  <input type="radio" id="star-5" name="star" value="5">
+                  <label for="star-5" title="«5»"></label>
+                  <input type="radio" id="star-4" name="star" value="4">
+                  <label for="star-4" title="«4»"></label>
+                  <input type="radio" id="star-3" name="star" value="3">
+                  <label for="star-3" title="«3»"></label>
+                  <input type="radio" id="star-2" name="star" value="2">
+                  <label for="star-2" title="«2»"></label>
+                  <input type="radio" id="star-1" name="star" value="1">
+                  <label for="star-1" title="«1»"></label>
+                </div>
+              </div>
             </div>
           </div>
           <div class="info-list-copyright">

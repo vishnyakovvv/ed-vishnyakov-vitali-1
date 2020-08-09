@@ -389,8 +389,55 @@ input[type="range"]:focus::-ms-fill-upper {
   margin-bottom: 20px;
 }
 
+.products-card {
+  position: relative;
+}
+
 .products-image {
   margin-bottom: 27px;
+}
+
+.products-card-hover {
+  display: none;
+}
+
+.products-card:hover .products-card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 207px;
+  height: 207px;
+
+  background-color: #e5eaf8;
+  opacity: 0.9;
+}
+
+.products-card:active .products-card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  width: 207px;
+  height: 207px;
+
+  background-color: #e5eaf8;
+  opacity: 0.67;
+}
+
+.card-hover-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 29px;
+  color: #1e0606;
+  text-transform: uppercase;
+
+  margin: auto;
 }
 
 .products-name {

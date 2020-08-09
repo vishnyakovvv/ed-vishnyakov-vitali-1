@@ -6,6 +6,10 @@
   display: flex;
 }
 
+.form-wrapper {
+  margin-right: 120px;
+}
+
 .contact-us-text-par {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
