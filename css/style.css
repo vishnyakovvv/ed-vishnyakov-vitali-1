@@ -47,9 +47,6 @@
   margin-bottom: 13px;
 }
 
-.slide-strips {
-}
-
 .strip {
   display: block;
 
@@ -318,9 +315,6 @@
   margin-bottom: 0;
 }
 
-.service-item {
-}
-
 .service-link {
   margin-left: 60px;
 }
@@ -339,9 +333,6 @@
   list-style-type: none;
 
   padding: 0;
-}
-
-.partners-list-item {
 }
 
 /* design-contacts */
@@ -447,9 +438,6 @@
   top: 25px;
 
   z-index: 0;
-}
-
-.map {
 }
 
 .contacts-tittle {
