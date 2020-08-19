@@ -24,7 +24,7 @@ h3 {
   margin: 0;
 }
 
-.tittle {
+.title {
   text-transform: uppercase;
 
   font-family: "Montserrat", sans-serif;
@@ -92,7 +92,7 @@ h3 {
   position: relative;
 }
 
-.card-tittle {
+.card-title {
   color: #ffffff;
 
   font-size: 26px;
@@ -106,8 +106,8 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.card-tittle:hover,
-.card-tittle:active {
+.card-title:hover,
+.card-title:active {
   text-decoration: underline;
 }
 
@@ -237,7 +237,7 @@ h3 {
   justify-content: space-between;
 }
 
-.footer-tittle {
+.footer-title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;

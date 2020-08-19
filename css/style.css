@@ -70,7 +70,7 @@
   background-color: rgba(30, 6, 6, 0.6);
 }
 
-.slider__tittle-text-link {
+.slider__title-text-link {
   padding-left: 133px;
   padding-top: 90px;
 }
@@ -132,7 +132,7 @@
   margin-bottom: 90px;
 }
 
-.category-tittle {
+.category-title {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-size: 38px;
@@ -253,7 +253,7 @@
   margin-left: 60px;
 }
 
-.service-tittle {
+.service-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -378,7 +378,7 @@
   margin: 0 0 12px 0;
 }
 
-.design-aboutus-tittle {
+.design-aboutus-title {
   font-family: "Crimson Text", serif;
   font-weight: 500;
   font-size: 26px;
@@ -440,7 +440,7 @@
   z-index: 0;
 }
 
-.contacts-tittle {
+.contacts-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
