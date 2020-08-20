@@ -168,7 +168,7 @@
   cursor: pointer;
 }
 
-.category-list-accessories {
+.category-item:nth-child(4n + 4) {
   margin-right: 0;
 }
 
